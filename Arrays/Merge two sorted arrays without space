@@ -1,37 +1,28 @@
-import java.util.*;
-
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-       if(nums1.length == 0) nums1=nums2;
-       
-           int j=0,i=0;
         
-           while(i<m){
-               
-               if(nums1[i]>nums2[j]){
-                   int temp = nums1[i];
-                   nums1[i] = nums2[j];
-                   nums2[j]= temp;
-                   fixarray2(nums2);
-               }
-               else
-                   if(nums1[i] <= 0){
-                   nums1[i] = nums2[j];
-                    j++;
-               }
-                 i++;
-           }
-        }
-        public void fixarray2(int[] arr2){
-        for(int i=1;i<arr2.length;i++){
-            if(arr2[i]<arr2[i-1]){
-               int temp = arr2[i-1];
-               arr2[i-1] = arr2[i];
-               arr2[i]= temp; 
+        
+        int index = nums1.length - 1;   // Index for insertion (From The End)
+        int i = m-1;                    // Index for nums1 (From The End)
+        int j = n-1;                    //Index for nums2 (From The End)
+        
+        // Traversing From The End Of The Array Inserting Elements In Sorted Manner
+        while(index >= 0){
+            
+            int nums1Value = (i >= 0) ? nums1[i] : Integer.MIN_VALUE;
+            int nums2Value = (j >= 0) ? nums2[j] : Integer.MIN_VALUE;
+            
+            if(nums1Value > nums2Value){
+                nums1[index] = nums1Value;
+                i--;
+            }else{
+                nums1[index] = nums2Value;
+                j--;
             }
-           }
-         }    
-    
+            
+            index--;
+        }
+    }
 }
 
-TC : O(M*N) ; SC=O(1)
+TC : O(M) ; SC=O(1)
