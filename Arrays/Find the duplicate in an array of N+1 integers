@@ -1,0 +1,61 @@
+##Brute Force (2 Loops)
+Since solve the problem without modifying the array nums and uses only constant extra space, we can use Brute Force to solve it.
+
+It's easy to use 2 loops to do it, but the time complexity is O(n^2), so it wouldn't accepted as timeout.
+
+    // 2 Loops
+    public static int findDuplicate_2loops(int[] nums) {
+        int len = nums.length;
+        for (int i = 0; i < len; i++) {
+            for (int j = i + 1; j < len; j++) {
+                if (nums[i] == nums[j]) {
+                    return nums[i];
+                }
+            }
+        }
+
+        return len;
+    }
+Analysis
+Time Complexity: O(n^2)
+Space Complexity: O(1)
+
+##Count
+Count the frequency of the num in the array.
+
+With extra O(n) space, without modifying the input.
+
+    public static int findDuplicate(int[] nums) {
+        int len = nums.length;
+        int[] cnt = new int[len + 1];
+        for (int i = 0; i < len; i++) {
+            cnt[nums[i]]++;
+            if (cnt[nums[i]] > 1) {
+                return nums[i];
+            }
+        }
+
+        return len;
+    }
+Analysis
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+##Using a HashSet to record the occurrence of each number.
+
+With extra O(n) space, without modifying the input.
+
+    public static int findDuplicate_set(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+        int len = nums.length;
+        for (int i = 0; i < len; i++) {
+            if (!set.add(nums[i])) {
+                return nums[i];
+            }
+        }
+
+        return len;
+    }
+Analysis
+Time Complexity: O(n)
+Space Complexity: O(n)
