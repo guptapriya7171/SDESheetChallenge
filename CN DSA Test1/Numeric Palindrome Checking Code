@@ -1,0 +1,37 @@
+Write a program to determine if given number is palindrome or not. Print true if it is palindrome, false otherwise.
+Palindrome are the numbers for which reverse is exactly same as the original one. For eg. 121
+
+SOLUTION:
+
+package Array;
+
+import java.util.Scanner;
+
+public class NumericPalindrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Scanner Inp  = new Scanner(System.in);
+       int n = Inp.nextInt();
+       
+      int temp = n;  // temporary variable
+      int rev = 0;    // reversal of a number 
+      
+       while(temp>0) {
+    	   int rem = temp %10;
+    	   rev  = rem + (rev * 10);
+    	   temp = temp/10;     
+         // updating a temporary variable
+         //rem  = 1 // 2 //1
+         // rev = 1 + (rev(0) *0); // 2 + 1*10 //1+12*10
+         // temp = 12    //1 //0   
+       }
+       if(rev == n) {
+    	  System.out.println("true");
+       }
+       else {
+    	   System.out.println("falseno");
+       }
+	}
+
+}
