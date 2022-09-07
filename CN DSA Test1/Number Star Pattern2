@@ -1,0 +1,45 @@
+Print the following pattern for given number of rows.
+Input format :
+
+Line 1 : N (Total number of rows)
+
+Sample Input :
+   5
+Sample Output :
+1234554321
+1234**4321
+123****321
+12******21
+1********1
+
+CODE:
+public class NumberStarPattern2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         
+		Scanner Inp = new Scanner(System.in);
+		int n = Inp.nextInt();
+		int count = 0;
+		
+		for(int j=n;j>=1;j--) {
+			
+			for(int i= 1;i<=j;i++) {
+				System.out.print(i);
+			}
+			
+			for(int a=0;a<count;a++) {
+				System.out.print("*");
+			}
+			
+			count  = count +2;
+			
+			for(int b=j;b>=1;b--) {
+				  System.out.print(b);
+			}
+			System.out.println();
+		}
+		
+	}
+
+}
