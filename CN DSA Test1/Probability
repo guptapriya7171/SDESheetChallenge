@@ -1,0 +1,43 @@
+Question:
+An urn contains 8 balls : 4 red , 2 blue and 2 green. Now n balls are drawn out of the urn. 
+Calculate the probability that out of n drawn balls exactly x balls are red.
+Find your answer multiplied by 100 and return the integer part.
+
+Input format :
+Two spaced integers : n and x
+Output format :
+Integer part of (Probability * 100). 
+Sample Input 1 :
+3 1
+Sample Output 1:
+42
+
+CODE:
+public class Probability {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		int x = s.nextInt();
+		System.out.println(probability(n,x));
+		
+	}
+	public static int probability(int n, int x) {
+		int ans  = ncr(4,x) * ncr(4, n-x);
+		float probab = ans  * 1.0f / ncr(8,n);
+		return (int)(probab*100);
+	}
+	public static int ncr(int n, int r)
+    {
+    return fact(n) / (fact(r) * fact(n - r));
+    }
+	 public static int fact(int n)
+     {
+      int res = 1;
+      for (int i = 2; i <= n; i++)
+       res = res * i;
+       return res;
+     }
+	}
