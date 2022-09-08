@@ -1,0 +1,41 @@
+package Array;
+
+import java.util.Scanner;
+
+public class findDuplicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+		Scanner s = new Scanner(System.in);
+		int times = s.nextInt();
+		int testCases =1;
+		int n1 = s.nextInt();
+		int arr1[] = new int[n1];
+		
+		for(int i=0;i<n1;i++) {
+			arr1[i] = s.nextInt();
+		}
+		
+		while(testCases <= times) {
+			int result = returnDuplicate(arr1, n1);
+			System.out.println(result);
+			testCases++;
+			}
+	}
+	public static int returnDuplicate(int arr1[], int n) {
+		
+		int count =0;
+		for(int i=0;i<(n-1);i++) {
+			for(int j=i+1;j<n;j++) {
+				if(arr1[i]  == arr1[j]) {
+				     count = arr1[j];break;
+				}
+				
+			}
+			
+		}
+		return count;
+	}
+	
+}
