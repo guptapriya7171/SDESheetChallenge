@@ -1,0 +1,44 @@
+package Array;
+ 
+import java.util.*;
+
+public class SortZeroOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      
+		Scanner s = new Scanner(System.in);
+		int times = s.nextInt();
+		int n = s.nextInt();
+		int arr[] = new int[n];
+		
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = s.nextInt();
+		}
+		
+		int count =1;
+		
+		while(count <= times) {
+			sort (n,  arr);
+			count++;
+		}
+		
+	}
+	public static void sort(int n, int arr[]) {
+		
+		int zero = 0;
+		 for(int i=0; i<arr.length; i++){
+			 if(arr[i]==0) {
+				 int temp = arr[zero];
+				 arr[zero] = arr[i];
+				 arr[i]  =  temp;
+				 zero++;
+			 }
+		 }
+		 for(int i=0; i<arr.length; i++){
+	          System.out.print(arr[i] + " ");
+     	}
+	
+      }
+
+}
