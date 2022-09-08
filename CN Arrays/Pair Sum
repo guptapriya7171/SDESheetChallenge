@@ -1,0 +1,43 @@
+package Array;
+
+import java.util.Scanner;
+
+public class PairSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		int times = s.nextInt();
+		int n = s.nextInt();
+		int arr[] = new int[n];
+	
+		
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = s.nextInt();
+		}
+		int x = s.nextInt();
+		int testCases =1;
+		if(n == 0) {
+			System.out.println(0);
+		}
+		while(testCases <= times) {
+			int count = returnPairSum (arr, x);
+			System.out.println(count + " ");
+			testCases++;
+		}
+	}
+	public static int returnPairSum(int arr[], int x) {
+		 int n = arr.length;
+	        int count=0;
+	        for(int i=0;i<(n-1);i++){
+	          for(int j=i+1;j<n;j++){
+	              if(arr[i]+arr[j] == x){
+	                  count++;
+	              }
+	          }  
+	        }
+	        return count;
+	    }
+	}
+
+}
