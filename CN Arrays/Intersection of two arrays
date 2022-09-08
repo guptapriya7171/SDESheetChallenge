@@ -1,0 +1,40 @@
+package Array;
+import java.util.*;
+
+public class IntersectionOfTwoArrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		int times = s.nextInt();
+		int testCases =1;
+		int n1 = s.nextInt();
+		int arr1[] = new int[n1];
+		for(int i=0;i<n1;i++) {
+			arr1[i] = s.nextInt();
+		}
+		
+		int n2 = s.nextInt();
+		int arr2[] = new int[n2];
+		for(int i=0;i<n2;i++) {
+			arr2[i] = s.nextInt();
+		}
+		
+		while(testCases <= times) {
+		returnIntersection(arr1, arr2, n1, n2);
+		testCases++;
+		}
+	}
+    public static void returnIntersection(int arr1[], int arr2[], int length1, int length2) {
+    	for(int i=0;i<length1;i++) {
+    		for(int j=0;j<length2;j++) {
+    			 if(arr1[i]==arr2[j]){
+                     System.out.print(arr1[i]+" ");
+                     arr2[j]  = Integer.MIN_VALUE;
+                     break;
+                     
+    		}
+    	}
+    }
+
+    }}
