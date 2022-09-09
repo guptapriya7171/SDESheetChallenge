@@ -1,0 +1,35 @@
+package Array;
+
+import java.util.*;
+
+public class SwapAlternate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		int times = s.nextInt();
+		int testCases =1;
+	
+		int n = s.nextInt();
+		int arr[] = new int[n];
+		for(int i=0;i<n;i++) {
+			arr[i] = s.nextInt();
+		}
+		
+		while(testCases <= times) {
+			swapAlternate(arr, n);
+			for(int i = 0;i<n;i++) {
+				System.out.println(arr[i]);
+			}
+			testCases++;
+		}
+	}
+	public static void swapAlternate(int arr[], int n) {
+		for(int i=0;i<n;i=i+2) {
+			int temp = arr[i];
+			arr[i] = arr[i+1];
+			arr[i+1] = temp;
+		}
+	}
+
+}
