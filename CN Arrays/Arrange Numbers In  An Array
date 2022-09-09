@@ -25,10 +25,13 @@ public class ArrangeNumbersInArray {
 		}
 	}
 	public static void arrangeArray(int arr[], int n) {
-	     Arrays.sort(arr);
-	     
+	 if(n == 1){
+            System.out.print(arr[0]);
+        }
+       else{
+       
 	     int st = 0 ; int ed = n-1; 
-	     int value=0;
+	     int value=1;
 	     
 	     while(st < ed) {
 	    	 
@@ -43,7 +46,7 @@ public class ArrangeNumbersInArray {
 	    	 arr[st] = value;
 	     }
 	     
- 	     
-	}
+       }
+ }
 
 }
