@@ -1,0 +1,44 @@
+package Array;
+
+import java.util.*;
+
+public class findUnique {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		int times = s.nextInt();
+		int testCases =1;
+	
+		int n = s.nextInt();
+		int arr[] = new int[n];
+		for(int i=0;i<n;i++) {
+			arr[i] = s.nextInt();
+		}
+		
+		while(testCases <= times) {
+			int unique = returnUnique (arr, n);
+			System.out.println( unique+ " ");
+			testCases++;
+		}
+	}
+	public static int returnUnique(int arr[], int n) {
+		int rep =0;
+		for(int j=0;j<n;j++) {
+			int i = j+1;
+			while(i<n) {
+				if(arr[i] == arr[j] && i!=j) {
+					++rep;
+					break;
+				}else {
+					i++;
+				}
+			}
+			if(rep ==1) {
+				return arr[j];
+			}
+		}
+		return 0;
+	}
+
+}
