@@ -1,0 +1,38 @@
+package Array;
+import java.util.*;
+
+public class checkIndexOfRotation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		 int testcases = 1;
+		 int times = sc.nextInt();
+		
+		 while(testcases <= times) {
+			 int n = sc.nextInt();
+			 int arr[] = new int[n];
+			 
+			 for(int i=0; i<n; i++) {
+				 arr[i] = sc.nextInt();
+			 }
+			
+			int  result = returnIndex(arr, n);
+			
+			System.out.print(result+" ");
+			 testcases++;
+		 }
+	}
+	public static int returnIndex(int arr[], int n) {
+		int res =0;
+		for(int i=1;i<n;i++) {
+			if(arr[i]<arr[i-1]) {
+				res = i;
+			}
+		}
+		return res;
+		
+	}
+
+}
