@@ -1,0 +1,56 @@
+package Array;
+import java.util.*;
+public class mergeTwoSorted {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		 int testcases = 1;
+		 int times = s.nextInt();
+		 
+		 while(testcases <= times) {
+			 int n1 = s.nextInt();
+			 int n2 = s.nextInt();
+			 
+		     int arrOne[] = new int[n1];
+		     int arrTwo[] = new int[n2];
+		     
+		     for(int i=0 ;i<n1; i++) {
+		    	   arrOne[i] = s.nextInt(); }
+		    
+		     for(int j=0 ;j<n2;j++) {
+		    	   arrTwo[j] = s.nextInt(); }
+		      int arrThree[] = new int[n1+n2]; 
+		      arrThree = mergeSorted(arrOne, arrTwo, n1, n2);
+		      
+		      for(int h=0 ;h<(n1+n2); h++) {
+		    	  System.out.print(arrThree[h]+ " ");
+		      }
+		 }
+	}
+	public static int[]  mergeSorted(int arr1[], int arr2[], int n1, int n2) {
+		int k =0 ;
+		int arr3[]=new int[n1+n2];
+		int a=0,b=0;
+		
+		while(a<n1 && b<n2) {
+			
+			if(arr1[a] < arr2[b] || arr1[a] == arr2[b]) {
+				arr3[k] = arr1[a] ;
+				a++; k++;
+			}else {
+				arr3[k] = arr2[b];
+				b++;k++;
+			}
+		}
+	while(a<n1) {
+		arr3[k++] = arr1[a++];
+	}
+	while(b<n2) {
+		arr3[k++] = arr2[b++];
+	}
+	return arr3;
+			
+	}
+
+}
