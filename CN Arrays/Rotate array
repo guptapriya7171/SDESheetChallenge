@@ -1,0 +1,55 @@
+package Array;
+import java.util.*;
+public class rotateArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		 int testcases = 1;
+		 int times = s.nextInt();
+		
+		 while(testcases <= times) {
+			 int n = s.nextInt();
+			 int arr[] = new int[n];
+			 
+			 for(int i=0; i<n; i++) {
+				 arr[i] = s.nextInt();
+			 }
+			 
+			 int d = s.nextInt();
+			 rotate(arr,d);
+			 for(int i=0;i<arr.length;i++) {
+				 System.out.print(arr[i]+ " ");
+			 }
+			 testcases++;
+		 }
+
+	}
+	public static void rotate(int arr[], int d) {
+		if(d==0) {
+			return;
+		}
+		int duplicateArr[] = new int[d];
+		
+		//temporarily store numbers in a duplicate array
+		for(int temp=0;temp<d;temp++) {
+			duplicateArr[temp] = arr[temp];
+		}
+
+		// add all rotating numbers
+		int st = d;
+		for(int k=0;k<(arr.length-d);k++) {
+		arr[k] = arr[st];
+		st++;
+	     }
+		
+		//push the initial elements
+		int temp = 0;
+		for(int j= (arr.length-d) ; j<arr.length;j++) {
+			arr[j] = duplicateArr[temp++];
+		}
+		
+		
+	}
+
+}
