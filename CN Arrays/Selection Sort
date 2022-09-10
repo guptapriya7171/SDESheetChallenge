@@ -1,0 +1,45 @@
+package Array;
+
+import java.util.*;
+
+public class selectionSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+		Scanner s = new Scanner(System.in);
+		   int testcases = 1;
+		   int times = s.nextInt();
+		  
+		   while(testcases <= times) {
+	       int n = s.nextInt();
+	       int arr[] = new int[n];
+	       
+	       for(int i=0 ;i<n; i++) {
+	    	   arr[i] = s.nextInt();
+	       }
+	       selectionSort(arr, n);
+	       for(int i=0;i<n;i++) {
+	       System.out.print(arr[i]+ " ");
+	       }
+		   } 
+	       
+	}
+	public static void selectionSort(int arr[], int n) {
+		
+		for(int i=0;i<n-1;i++) {
+			
+			int  min_index = i;
+			//minimum element
+			for(int j=i+1;j<n;j++) {
+				if(arr[j] < arr[min_index])
+					min_index = j;
+			}
+			//swap the element
+			 int temp = arr[min_index];
+	          arr[min_index] = arr[i];
+	          arr[i] = temp;
+	       
+		}
+	}
+}
