@@ -26,12 +26,14 @@ public class secondLargest {
 		 }
 	}
 	public static int secLargest(int arr[], int n) {
-		int num=0;
+		int num=Integer.MIN_VALUE;
 		
+		if(arr.length <= 1 || arr[0] == arr[1]) {
+			return num;
+		}
 		Arrays.sort(arr);
 		num = arr[n-2];
 		return num;
-		
 	}
 
 }
