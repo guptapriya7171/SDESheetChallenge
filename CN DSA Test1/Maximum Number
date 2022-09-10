@@ -1,0 +1,26 @@
+package Array;
+import java.util.*;
+public class MaximumNumber {
+  
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+	
+        int maxnum = 0;
+		int n = s.nextInt();
+		int i=1;
+		
+		while(n/i>0) {
+			
+			int rem = n% i;
+			int newnum =  (n/(i*10) ) * i + rem;
+			i = i *10;
+			if(newnum > maxnum) {
+				maxnum = newnum;
+			}
+		}
+		System.out.println(maxnum);
+		return;
+		
+		}
+	}
+	
