@@ -26,6 +26,7 @@ public class mergeTwoSorted {
 		      for(int h=0 ;h<(n1+n2); h++) {
 		    	  System.out.print(arrThree[h]+ " ");
 		      }
+		      testcases++;
 		 }
 	}
 	public static int[]  mergeSorted(int arr1[], int arr2[], int n1, int n2) {
