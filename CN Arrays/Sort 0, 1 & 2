@@ -1,0 +1,46 @@
+package Array;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+Solution 1: Using inbuilt method 
+
+package Array;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class sortZeroOneTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		 int testcases = 1;
+		 int times = sc.nextInt();
+		
+		 while(testcases <= times) {
+			 int n = sc.nextInt();
+			 int arr[] = new int[n];
+			 
+			 for(int i=0; i<n; i++) {
+				 arr[i] = sc.nextInt();
+			 }
+			
+			
+			sort(arr, n);
+			
+			 for(int i=0; i<n; i++) {
+				 System.out.print(arr[i]+" ");
+			 }
+			
+			 testcases++;
+		 }
+	}
+	public static void sort(int arr[], int n) {
+		int l=0, m =0, h=n-1;
+		Arrays.sort(arr);
+	}
+	
+
+}
