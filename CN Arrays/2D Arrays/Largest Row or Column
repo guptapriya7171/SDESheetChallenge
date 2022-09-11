@@ -1,0 +1,75 @@
+package array2d;
+
+import java.util.Scanner;
+
+public class largestRowCol {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		 int testcases = 1;
+		 int times = sc.nextInt();
+		
+		 while(testcases <= times) {
+			 
+			 int rows = sc.nextInt();
+			 int cols = sc.nextInt();
+			 
+			 int[][] arr = new int[rows][cols];
+			 
+			 for(int i=0;i<rows;i++) {
+					for(int j=0;j<cols;j++) {
+						arr[i][j]= sc.nextInt();
+					}
+				}
+			 
+			 returnLargest(arr, rows, cols);
+			 testcases++;
+		 }
+		 }
+		public static void  returnLargest(int[][] arr, int n, int m) {
+			int max_row = Integer.MIN_VALUE;
+			int max_col = Integer.MIN_VALUE;
+			int rowNo=0;
+			int colNo = 0;
+		
+			//Exception
+			 if(n == 0){
+		            System.out.println("row" +" " + n +" " + max_row);
+		            return ;
+		        }
+			 
+			//Maximum Row Value
+			for(int i=0;i<n;i++) {
+				int sum = 0;
+				for(int j=0;j<m;j++) {
+					sum = sum+ arr[i][j];
+				}
+				if(max_row<sum) {
+					max_row = sum;
+					rowNo = i;
+				}
+			}
+			
+			//Maximum Column Value
+			for(int i=0;i<n;i++) {
+				int sum = 0;
+				for(int j=0;j<m;j++) {
+					sum = sum+ arr[j][i];
+				}
+				if(max_col<sum) {
+					max_col = sum;
+					colNo = i;
+				}
+			}
+		   if(max_row < max_col) {
+			   System.out.println("column " +  colNo + " "+max_col );
+		   }else {
+			   System.out.println("row " +  rowNo + " "+ max_row );
+		   }
+		}
+	
+	}
+
+
