@@ -1,0 +1,73 @@
+package array2d;
+
+import java.util.Scanner;
+
+public class printSpiral {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		Scanner sc = new Scanner(System.in);
+		 int testcases = 1;
+		 int times = sc.nextInt();
+		
+           while(testcases <= times) {
+			 
+			 int rows = sc.nextInt();
+			 int cols = sc.nextInt();
+			 
+			 int[][] arr = new int[rows][cols];
+			 
+			 for(int i=0;i<rows;i++) {
+					for(int j=0;j<cols;j++) {
+						arr[i][j]= sc.nextInt();
+					}
+				}
+			 returnSpiral(arr, rows, cols );
+			 testcases++;
+		 }
+	}
+	public static void returnSpiral(int arr[][], int rows, int cols) {
+		if(rows == 0) {
+			return;
+		}
+		int lastRow = rows - 1;
+		int lastCol = cols-1;
+		int x = 0, y=0;
+		
+		while(x <= lastRow && y<=lastCol) {
+			
+			//SingleRow - l2r
+			for(int  i=y;i<=lastCol;i++) {         //Colch =0 to  col-1
+				System.out.print(arr[x][i]+ " ");
+			}x++;
+			
+			//SingleColumn- u2d
+			for(int i=x;i<=lastRow;i++) {  //Rowch = 1 to  row-1
+				System.out.print(arr[i][lastCol] + " ");
+			}
+			lastCol--;
+			
+			//SingleRow - r2l
+			if(x <= lastRow ) {
+				for (int i=lastCol; i >= y; i--) {  //Colch =  col-1 to 0
+		               System.out.print(arr[lastRow][i] 	+ " ");
+		            }	
+                lastRow--;
+			}
+		
+			
+			//SingleColumn- d2u
+			if(y <= lastCol){
+	            for (int i = lastRow; i >= x; i--) {  //Rowch = row-1 to 0	
+	               System.out.print(arr[i][y] + " ");
+	            }
+	            y++;
+	         }
+			
+		}
+		
+	}
+
+}
