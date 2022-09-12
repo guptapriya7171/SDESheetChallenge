@@ -29,3 +29,33 @@ public class stringDemo {
 	}
 
 }
+2. Using Substring Method
+
+CODE:
+package String;
+import java.util.*;
+public class stringDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		
+		printSubstrings(str1);
+	}
+	public static void printSubstrings(String str) {
+		//Your code goes here
+       
+        
+        for(int start=0; start < str.length(); start++){
+            
+            for(int end=start; end< str.length(); end++){
+               System.out.println(str.substring(start, end+1));
+            }  
+        }
+	}
+
+}
+
+
