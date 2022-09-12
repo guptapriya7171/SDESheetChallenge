@@ -1,0 +1,94 @@
+1. Brute Force Method
+package String;
+
+import java.util.Scanner;
+
+public class checkPermutation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String str2 = sc.nextLine();	
+		
+		boolean result;
+		result  = checkPermutation(str1, str2);
+		
+		System.out.println(result);
+	}
+	public static boolean checkPermutation(String a, String b) {
+		boolean ans = true ;
+		int n1 = a.length();
+		int n2 = b.length();
+		
+    if (a.length() != b.length()) { 
+            ans= false; 
+    }
+		for(int i =0;i<n1;i++) {
+			for(int j=0;j<n2;j++) {
+				if(a.charAt(i) == b.charAt(j)) {
+					break;
+				}
+				else if((a.charAt(i) != b.charAt(j)) && j==(n2-1)) {
+					ans = false;
+				}
+			}
+		}
+		
+		
+		return ans;
+	}
+
+}
+
+2. By Counting Frequency 
+CODE:
+package String;
+
+import java.util.Scanner;
+
+public class checkPermutation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String str2 = sc.nextLine();	
+		
+		boolean result;
+		result  = checkPermutation(str1, str2);
+		
+		System.out.println(result);
+	}
+	public static boolean checkPermutation(String a, String b) {
+		boolean ans = true ;
+		
+		if (a.length() != b.length()) { 
+            ans= false; 
+        }
+		 int frequency[] = new int[256];
+
+	        for (int i = 0; i < a.length(); i++) {
+	            char ch = a.charAt(i);
+	            frequency[ch]++;
+	        } 
+
+	        for (int i = 0; i < b.length(); i++) {
+	            char ch = b.charAt(i);
+	            frequency[ch]--; 
+	        }
+	        for (int i = 0; i < 256; ++i) { 
+	            if (frequency[i] != 0) {
+	                ans = false;
+	            } 
+	        } 
+		
+		
+		return ans;
+	}
+
+}
+
+
