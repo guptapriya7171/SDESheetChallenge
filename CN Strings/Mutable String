@@ -1,0 +1,19 @@
+Strings in java is immutable because of a memory optimization using stringpool.
+But we can make it mutable using StringBuffer class.
+
+
+CODE:
+
+package String;
+
+public class StringBufferDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   
+		StringBuffer str =  new StringBuffer("abc");
+		str.setCharAt(0, 'h');
+		System.out.println(str);
+	}
+
+}
