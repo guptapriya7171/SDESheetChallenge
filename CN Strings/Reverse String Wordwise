@@ -1,0 +1,53 @@
+CODE:
+package String;
+
+import java.util.Scanner;
+
+public class reverseStringWordwise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String result = "";
+		if(str1.length() <=1) {
+			System.out.println(str1);
+		}
+		else {
+			 result = revStrWrdwise(str1);
+		}
+		System.out.println(result);
+	}
+	public static String revStrWrdwise(String str) {
+		String ans ="";
+		int currentWordStart = str.length()-1;
+		
+		for(int i=(str.length()-1);i>=0;i--) {
+			if(str.charAt(i) == ' ') {
+				int currentWordEnd = i+1;
+				String revWord="";
+				for(int j=currentWordStart;j>=currentWordEnd;j--) {
+					revWord = str.charAt(j) + revWord;
+				}
+				//Add it final string(ans)
+				ans += revWord+" ";
+				currentWordStart = i-1;
+			}
+		}
+		int currentWordEnd =0;
+		String revWord="";
+		for(int j=currentWordStart;j>=currentWordEnd;j--) {
+			revWord = str.charAt(j) + revWord;
+		}
+		//Add it final string(ans)
+		ans += revWord+" ";
+	
+		return ans;
+	}
+	
+	}
+
+
+Inp:Welcome to Coding Ninjas
+Out:Ninjas Coding to Welcome 
