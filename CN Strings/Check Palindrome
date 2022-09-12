@@ -1,6 +1,6 @@
 1. Brute Force
 
-CODE
+CODE:
 package String;
 import java.util.*;
 
@@ -33,4 +33,42 @@ public class checkPalindrome {
 
 }
 
-2.
+2. Alternative Method
+
+CODE:
+package String;
+import java.util.*;
+
+public class checkPalindrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		String string = sc.nextLine();
+		
+		boolean result;
+		result = checkChar(string);
+		
+		System.out.println(result);
+	}
+	
+	public static boolean checkChar(String str){
+
+    int a = 0; 
+    int b = str.length()-1;
+    
+    while(a<b || a==b) {
+    	
+    	if(str.charAt(a) != str.charAt(b)) {
+    	 return false;
+    	}
+    	else {
+    		a++; b--;
+    	}
+    }
+	return true;
+
+	}
+	}
+
