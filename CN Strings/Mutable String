@@ -1,3 +1,4 @@
+NOTES:
 String literals are stored in a common pool called String pool. This facilitates
 sharing of storage for strings with the same contents to conserve storage. String
 objects allocated via new operator are stored in the heap memory(all non
@@ -6,7 +7,8 @@ sharing of storage for the same contents.
 
 Strings in java is immutable because of a memory optimization using stringpool but we can make it mutable using StringBuffer class.
 If our string is dynamic in nature and keeps on changing frequently than it is wiser to user StringBuffer.
-
+We can use the method equals() of the String class to compare the contents of two Strings.
+You can use the relational equality operator '==' to compare the references(or pointers) of two objects.
 
 CODE:
 
