@@ -1,0 +1,35 @@
+CODE:
+
+package String;
+
+import java.util.Scanner;
+
+public class removeCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		char ch = sc.next().charAt(0);
+		String result = "";
+		if(str1.length() <=1) {
+			System.out.println(str1);
+		}
+		else {
+			result =  removeCh(str1, ch);
+		}
+		System.out.println(result);
+	}
+	public static String removeCh(String str, char ch) {
+		String s ="";
+		s = s + str.charAt(0);
+		for(int i=1;i<str.length();i++) {
+			 if (str.charAt(i) !=  ch ) {
+	            	s = s + str.charAt(i);
+			 }
+		}
+		return s;
+	}
+
+}
