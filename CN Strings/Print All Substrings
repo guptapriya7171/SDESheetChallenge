@@ -58,4 +58,39 @@ public class stringDemo {
 
 }
 
+3. For different output
+
+CODE:
+
+package String;
+import java.util.*;
+public class stringDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		
+		printSubstrings(str1);
+	}
+	public static void printSubstrings(String str) {
+		//Your code goes here
+       
+        
+        for(int len=1; len <= str.length(); len++){
+            
+            for(int start=0; start<= str.length()-len; start++){
+               int end = start + len  -1;
+               System.out.println(str.substring(start, end+1));
+            }  
+        }
+	}
+
+}
+
+
+
+
+
 
