@@ -1,5 +1,5 @@
-Strings in java is immutable because of a memory optimization using stringpool.
-But we can make it mutable using StringBuffer class.
+Strings in java is immutable because of a memory optimization using stringpool but we can make it mutable using StringBuffer class.
+If our string is dynamic in nature and keeps on changing frequently than it is wiser to user StringBuffer.
 
 
 CODE:
