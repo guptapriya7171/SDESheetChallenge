@@ -1,0 +1,36 @@
+1. Brute Force
+
+CODE
+package String;
+import java.util.*;
+
+public class checkPalindrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String string = sc.nextLine() ;
+		String revString;
+		
+		revString = reverseStr(string);
+		
+		if(string.equals(revString) ) {
+			System.out.println("true");
+		}
+		else {
+			System.out.println("false");
+		}
+	}
+	public static String reverseStr(String str){
+
+		 String  reverseString ="";
+		 for(int i=0;i<str.length();i++){
+		    reverseString = str.charAt(i) + reverseString;
+		    }
+		 
+		    return reverseString;
+		    }
+
+}
+
+2.
