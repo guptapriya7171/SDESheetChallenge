@@ -11,7 +11,7 @@ public class highestOccurringCh {
 
 		Scanner sc = new Scanner(System.in);
 		String str1 = sc.nextLine();
-		
+		str1 = str1.toLowerCase();
 		char result = ' ';
 		if(str1.length() <=1) {
 			System.out.println(str1);
