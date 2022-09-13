@@ -1,0 +1,46 @@
+package String;
+
+import java.util.Scanner;
+
+public class compressString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		str1 = str1.toLowerCase();
+		String result = "";
+		if(str1.length() <=1) {
+			System.out.println(str1);
+		}
+		else {
+			result =  compress(str1);
+		}
+		System.out.println(result);
+	}
+	public static String compress(String str) {
+		String ans =  "";
+		ans  +=		str.substring(0,1); 
+		int count = 1;
+		
+		for(int i=1;i<str.length();i++) {
+			if (str.charAt(i) == str.charAt(i-1)){
+					count++;continue;	
+			}
+			if(count>1) {
+				ans+=count;
+				count =1;
+			}
+			 ans=ans+str.charAt(i);
+		
+		}
+		if(count>1) {
+			ans+=count;
+		}
+	  
+		
+		return ans;
+	}
+
+}
