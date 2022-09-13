@@ -1,0 +1,59 @@
+package String;
+
+import java.util.Scanner;
+
+public class minLengthWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String result="";
+		if(str1.length() <=1) {
+			System.out.println(str1);
+		}
+		else {
+			result =  minmiumLenWord(str1);
+		}
+		System.out.println(result);
+	}
+	public static String minmiumLenWord(String str) {
+		String minWord="";
+        int len = str.length(); 
+        int si = 0, ei = 0; 
+        int min_length = len, min_start_index = 0; 
+             
+  
+        // Loop while input string is not empty 
+        while (ei <= len)  
+        { 
+            if (ei < len && str.charAt(ei) != ' ') 
+            { 
+                ei++; 
+            }  
+            else
+            { 
+                // end of a word 
+                // find curr word length 
+                int curr_length = ei - si; 
+  
+                if (curr_length < min_length)  
+                { 
+                    min_length = curr_length; 
+                    min_start_index = si; 
+                } 
+  
+                
+                ei++; 
+                si = ei; 
+            } 
+        } 
+  
+        // store minimum and maximum length words 
+        minWord = str.substring(min_start_index, min_start_index + min_length); 
+               return minWord;
+		
+	}
+	}
+
+
