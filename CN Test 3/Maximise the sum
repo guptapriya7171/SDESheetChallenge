@@ -1,0 +1,70 @@
+CODE:
+
+package Array;
+
+import java.util.Scanner;
+
+public class maxSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner s = new Scanner(System.in);
+		
+		 int ans = 0;
+		 
+		int n1 = s.nextInt();
+		int arr1[] = new int[n1];
+		for(int i=0;i<n1;i++) {
+			arr1[i] = s.nextInt();
+		}
+		
+		int n2 = s.nextInt();
+		int arr2[] = new int[n2];
+		for(int i=0;i<n2;i++) {
+			arr2[i] = s.nextInt();
+		}
+		
+	
+		 ans =	maximumSumPath(arr1, arr2, n1, n2);
+		 System.out.print(ans);
+	
+		}
+	
+	public static int maximumSumPath(int[] input1, int[] input2 ,int m, int n) {
+		
+		
+        int result=0;
+        int sum1=0,sum2=0;
+        
+        int i=0,j=0;
+        
+        while(i<m && j<n){
+            if(input1[i]< input2[j])
+                sum1 += input1[i++];
+            
+            else if(input1[i]>input2[j])
+                sum2 += input2[j++];
+            else{
+                result += Math.max(sum1,sum2);
+                sum1 = 0;
+                sum2 = 0;
+                while(i<m && j<n && input1[i]==input2[j]){
+                    result = result + input1[i++];
+                    j++;
+                }
+            }
+        }
+        while(i<m){
+            sum1 += input1[i++];
+        }
+        while(j<n){
+            sum2 += input2[j++];
+        }
+        result += Math.max(sum1,sum2);
+        
+        return result;   
+        
+	}
+
+}
