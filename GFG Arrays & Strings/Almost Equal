@@ -1,0 +1,41 @@
+Given two strings S1 and S2 consisting of only lowercase characters whose anagrams are almost equal.
+The task is to count the number of characters which needs to be edited(delete) to make S1 equal to S2.
+
+CODE:
+class Geeks{
+    
+    static int coutChars(String s1, String s2)
+    {
+        
+      //creating an array to store
+        //the frequency of each alphabet
+        int hash[] = new int[26];
+        
+        //Increment frequency of alphabet
+        for(int i = 0;i<s1.length();i++){
+            hash[s1.charAt(i)-'a']++;
+        }
+        
+        //Decrementing frequncy of alphabet
+        for(int i = 0;i<s2.length();i++){
+            hash[s2.charAt(i)-'a']--;
+        }
+        
+        //initializing Extra Charcters 
+        //count to 0
+        int count = 0;
+        
+        //adding the absolute values to the 
+        //Extra Character count
+        for(int i = 0;i<26;i++){
+            if(hash[i] != 0){
+                count+=Math.abs(hash[i]);
+            }
+        }
+        
+        //returning Extra Charcater count
+        return count;
+
+  
+    }
+}
