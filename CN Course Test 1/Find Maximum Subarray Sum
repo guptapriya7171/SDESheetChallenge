@@ -1,0 +1,59 @@
+package array2d;
+import java.util.*;
+public class maxSubarrSum {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		int times = sc.nextInt();
+		
+		while(times -- > 0) {
+		int n = sc.nextInt();
+		int size = sc.nextInt();
+		if (n < size)
+        {
+           System.out.println("Invalid");
+           return;
+        }
+		int arr[] = new int[n];
+		
+		
+		for(int i=0;i<n;i++) {
+			arr[i] = sc.nextInt();
+		}
+		returnMaxSum(arr,n, size);
+		
+		}
+		
+	}
+	public static void returnMaxSum( int a[],int n, int size) {
+		int res = 0;
+        for (int i=0; i<size; i++)
+           res += a[i];
+      
+        int curr_sum = res;
+        for (int i=size; i<n; i++)
+        {
+           curr_sum += a[i] - a[i-size];
+           res = Math.max(res, curr_sum);
+        }
+		System.out.println(res);
+	}
+
+}
+ 
+ 
+IN and OPT
+
+2
+4
+1
+1 2 3 4
+4
+
+6 
+2
+2 7 3 6 7 7
+14
