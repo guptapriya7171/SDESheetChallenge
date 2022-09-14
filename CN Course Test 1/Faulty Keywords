@@ -1,0 +1,52 @@
+CODE:
+
+package String;
+
+import java.util.Scanner;
+
+public class faultyKeywords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc= new Scanner(System.in);
+		int times = sc.nextInt();
+		
+		while(times-- > 0) {
+			String s1=sc.next();
+			String s2=sc.next();
+			
+			isPossible(s1, s2);
+		}
+	}
+	public static void isPossible(String s1, String s2) {
+		
+		 if(s1.length()>s2.length())
+			 System.out.println("false");
+		 
+		String s3= "";
+		s3= s2.substring(0,1); 
+		
+	 for(int i=1;i<s2.length();i++) {
+		 if(s2.charAt(i) == s2.charAt(i-1)){
+				continue; 
+		 }else
+		 {
+			 s3 = s3 + s2.charAt(i);
+		 }
+	 }
+	// System.out.println(s3);
+	 if(s1.length() == s3.length()) {
+		 System.out.println("true");
+	 }else {
+		 System.out.println("false");
+	 }
+	}
+
+}
+
+IN & OP
+1
+alpha
+aalphhaa
+true
