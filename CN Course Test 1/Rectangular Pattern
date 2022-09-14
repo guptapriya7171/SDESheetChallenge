@@ -1,0 +1,64 @@
+package array2d;
+
+import java.util.*;
+
+public class recNumbers {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int times = sc.nextInt();
+		
+		while(times -- > 0) {
+		int n = sc.nextInt();
+		
+		printPattern(n);
+		
+		}
+	}
+	public static void printPattern(int n) {
+		int size = 2 *n -1;
+		int st =0;
+		int ed = size -1;
+		int arr[][] = new int[size][size];
+		while(n !=0) {
+			
+		for(int i=st;i<size;i++) {
+			
+			for(int j=st;j<size;j++) {
+				
+                if (i == st || i == ed || j == st || j == ed)
+				arr[i][j] =n;
+			}
+		}
+		st++;ed--;n--;
+	}
+		for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                System.out.print(arr[i][j]);
+            }
+            System.out.println();
+        }
+	}
+}
+
+IN & OUTPUT
+
+2
+4
+4444444
+4333333
+4322222
+4321111
+4321222
+4321233
+4321234
+5
+555555555
+544444444
+543333333
+543222222
+543211111
+543212222
+543212333
+543212344
+543212345
