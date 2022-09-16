@@ -1,4 +1,4 @@
-<h1>The “Rabin Karp” algorithm. </h1>
+The “Rabin Karp” algorithm.
 It is a string searching algorithm that is named after its authors Richard M. Carp and Michael O. Rabin. 
 This algorithm is used to find all the occurrences of a given pattern ‘P’’ in a given string ‘S’ in O(Ns + Np) time, 
 where ‘Ns’ and ‘Np’ are the lengths of ‘S’’ and ‘P’ respectively.
