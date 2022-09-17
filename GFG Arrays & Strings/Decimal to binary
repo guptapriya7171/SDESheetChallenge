@@ -32,3 +32,4 @@ class GFG
 	} 
 } 
 
+NOTE: If Integer is is given in a string form then convert it to integer using Integer.parseInt() method
