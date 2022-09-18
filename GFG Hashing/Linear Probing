@@ -1,5 +1,6 @@
 Linear probing is a collision handling technique in hashing.
 Linear probing says that whenever a collision occurs, search for the immediate next position
+Duplicate elements must be mapped to the same position in the hash table while colliding elements must be mapped to the [(value+1)%hashSise] position.
 
 CODE:
 //{ Driver Code Starts
