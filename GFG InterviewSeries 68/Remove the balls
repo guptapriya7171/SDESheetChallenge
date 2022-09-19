@@ -1,1 +1,30 @@
 
+SOLUTION
+class Solution {
+    public static int finLength(int N, int[] color, int[] radius) {
+        // code here
+        Stack<Pair> stack = new Stack<>();
+        
+        for(int i=0;i<N;i++){
+            Pair p = new Pair(color[i], radius[i]);
+            boolean matched = false;
+            if(!stack.isEmpty() && stack.peek().x == p.x &&  stack.peek().y == p.y){
+                matched = true;
+                stack.pop();
+            }
+            if(!matched){
+                stack.push(p);
+            }
+        }
+        return stack.size();
+    }
+}
+    class Pair{
+        int x;
+        int y;
+        
+        public Pair(int x, int y){
+            this.x = x;
+            this.y = y;
+        }
+    }
