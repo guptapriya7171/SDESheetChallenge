@@ -1,0 +1,28 @@
+CODE:
+package Recursion;
+
+public class recursionWithStrings {
+
+	public static String replaceChar(String s, char a, char b) {
+		if(s.length() ==0) {
+			return s;
+		}
+		
+		String smallOpt = replaceChar(s.substring(1), a,b);
+		if(s.charAt(0) == a) {
+			return b+ smallOpt;
+		}
+		else {
+			return s.charAt(0) + smallOpt;
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(replaceChar("abcxdxex" , 'x','y'));
+	}
+
+}
+
+OUTPUT:
+abcydyey
