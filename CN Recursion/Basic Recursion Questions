@@ -1,0 +1,39 @@
+package Recursion;
+
+public class Recursion {
+
+	//factorial
+	public static int fact(int n) {
+		if(n == 0) {
+			return 1;
+		}
+		int smallOutput = fact(n-1);
+		int output = n * smallOutput;
+		return output;
+	}
+	
+	//sum of n natural numbers
+	public static int sumn(int n) {
+		if(n == 0) return 0;
+		
+		int smallOutput  = sumn(n-1);
+		int output = n + smallOutput;
+		return output;
+	}
+	
+	// find power
+	public static int power(int x, int n) {
+		if(n == 0) return 1;
+		else {
+			return (x * power(x, n-1));
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         System.out.println(fact(5));
+         System.out.println(sumn(10));
+         System.out.println(power(3,4));
+	}
+
+}
