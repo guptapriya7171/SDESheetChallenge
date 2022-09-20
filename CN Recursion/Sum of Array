@@ -1,0 +1,33 @@
+CODE:
+package Recursion;
+
+import java.util.Scanner;
+
+public class sumOfarrele {
+
+	public static int sumOfArrEle(int a[], int N) {
+		if(N<=0)
+			return 0;
+		
+		return(sumOfArrEle(a,N-1) + a[N-1]);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner Inp = new Scanner(System.in);
+	       int n = Inp.nextInt();
+	       int arr[] = new int[n];
+	       for(int i =0;i<n;i++) {
+	    	   arr[i] = Inp.nextInt();
+	       }
+	       int output = sumOfArrEle(arr, n);
+	       
+	       System.out.println(output);
+	}
+
+}
+
+Inp & Output:
+3
+9 8 9
+26
