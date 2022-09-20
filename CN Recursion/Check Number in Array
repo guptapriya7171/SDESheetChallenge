@@ -1,0 +1,40 @@
+CODE:
+package Recursion;
+
+import java.util.Scanner;
+
+public class checkNumInArr {
+
+	public static boolean checkNum(int a[], int num,  int i) {
+		if(i == a.length) {
+			return false;
+		}
+		if(a[i]  == num) {
+			return true;
+		}
+		
+		return checkNum(a, num, i+1);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner Inp = new Scanner(System.in);
+	       int n = Inp.nextInt();
+	       int arr[] = new int[n];
+	       for(int i =0;i<n;i++) {
+	    	   arr[i] = Inp.nextInt();
+	       }
+	       int num = Inp.nextInt();
+	       boolean output = checkNum(arr, num, 0);
+	       
+	       System.out.println(output);
+	
+	}
+
+}
+
+IN & OUT
+3
+9 8 9
+8
+true
