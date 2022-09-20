@@ -1,0 +1,40 @@
+CODE:
+package Recursion;
+
+import java.util.Scanner;
+
+public class lastIndex {
+
+	public static int lastIndexI(int a[], int num, int n) {
+		if(n < 0)
+			return -1;
+		
+		if(a[n] == num) {
+			return n;
+		}
+		
+		int result  = lastIndexI(a,num,n-1);
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner Inp = new Scanner(System.in);
+	       int n = Inp.nextInt();
+	       int arr[] = new int[n];
+	       for(int i =0;i<n;i++) {
+	    	   arr[i] = Inp.nextInt();
+	       }
+	       int num = Inp.nextInt();
+	       int output = lastIndexI(arr, num, n-1);
+	       System.out.println(output);
+	}
+
+}
+
+IN & OUT:
+6
+2 3 5 6 3 1
+3
+4
