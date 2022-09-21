@@ -1,0 +1,46 @@
+CODE:
+package Recursion;
+
+public class removeChar {
+
+	public static String removeX(String input){
+		// Write your code here
+
+      if(input.length() == 0) {
+			return input;
+		}
+		String ans="";
+		if(input.charAt(0) != 'x') {
+			ans = ans + input.charAt(0);
+		}
+		
+		String smallAns = removeX(input.substring(1));
+		return ans + smallAns;
+	}
+	
+	//ans = ans+a, ab , abc, abcd, abcde
+	
+	
+public static String replaceChar(String s, char a, char b) {
+	if(s.length()==0) {
+		return s;
+	}
+	String smallOutput  = replaceChar(s.substring(1), a,b);
+	
+	if(s.charAt(0) == a) {
+		return b+smallOutput;
+	}
+	else {
+		return s.charAt(0) + smallOutput;
+	}
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(removeX("abcxdxex"));
+		System.out.println(replaceChar("xxyyysssaxcc", 'x', 'y'));
+	}
+
+}
+
