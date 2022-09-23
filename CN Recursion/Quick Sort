@@ -1,0 +1,65 @@
+package Recursion;
+
+import java.util.Scanner;
+
+public class quickSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner Inp = new Scanner(System.in);
+	    int t = Inp.nextInt();
+	    while(t-- >0) {
+	    	int size = Inp.nextInt();
+	    	int array[] = new int[size];
+	    	
+	    	for (int i = 0; i < size; i++) {
+				array[i] = Inp.nextInt();
+			}
+	       QSort(array, 0, size-1);
+	       
+	       for(int i=0;i<array.length;i++) {
+	    	   System.out.print(array[i] +" ");
+	       }
+	    }
+	}
+	public static int partition(int a[], int si, int ei) {
+		int pivotElement = a[si];
+		int smallerNumCount =0;
+		for(int i=si+1;	i<=ei;i++) {
+			if(a[i]<pivotElement) {
+				smallerNumCount++;
+			}
+		}
+    
+		int temp = a[si+smallerNumCount];
+		a[si+smallerNumCount] = pivotElement; //Placed Element
+		a[si] = temp;
+		
+    //check all elements indexes
+		int i = si;
+		int j = ei;
+		while(i<j) {
+			if(a[i]< pivotElement) {
+				i++;
+			}else if(a[j]>=pivotElement) {
+				j--;
+			}
+			else {
+				temp = a[i];
+				a[i] = a[j];
+				a[j] = temp;
+				i++;
+				j--;
+			}
+		}
+		return si+smallerNumCount;
+	}
+	public static void QSort(int a[], int si, int ei) {
+		if(si>=ei)return;
+		int pivotInd = partition(a,si,ei);
+		QSort(a,si,pivotInd-1);
+		QSort(a, pivotInd+1,ei);
+	}
+
+}
