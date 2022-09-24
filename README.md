@@ -13,11 +13,11 @@ Searching in the data structure can be done by applying searching algorithms to 
 
 These algorithms are classified according to the type of search operation they perform, such as:
 
-<h2> Sequential search </h2>
+<h4> Sequential search </h4>
 The list or array of elements is traversed sequentially while checking every component of the set.
-For example – Linear Search.
+<em>For example – Linear Search.</em>
 
-<h2> Interval Search </h2>
+<h4> Interval Search </h4>
 The interval search includes algorithms that are explicitly designed for searching in sorted data structures. In terms of efficiency, these algorithms are far better than linear search algorithms.
-Example- Logarithmic Search, Binary search.
+<em>Example- Logarithmic Search, Binary search.</em>
 
