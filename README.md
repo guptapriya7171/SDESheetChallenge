@@ -50,3 +50,5 @@ Every sorting algorithms have their own advantages and disadvantages. Select the
 
 Quicksort is considered to be one of the fastest sorting algorithms. It is also considered to be the best sorting algorithm. Some of its features are that it is basically a comparison sort and can be done in-place in an array, however, inefficient implementation, it’s not a stable sort.
 Though the worst-case complexity is O(n^2), on an average it gives us O(nlogn) time complexity. You can also think of considering Merge sort, which is very similar to Quicksort but has more complexity than quicksort.
+
+![This is an image](https://www.codingninjas.com/blog/wp-content/uploads/2020/11/image-170.png)
