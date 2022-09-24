@@ -1,0 +1,97 @@
+package Recursion;
+
+import java.util.Scanner;
+
+public class Assignment {
+
+	public static int totalCount =0;
+	public static double geometricSum(int k) {
+		double ans = 0.0;
+		if(k == 0) {
+			return 1;
+		}
+		else {
+			ans = 1/(double)Math.pow(2,k) + geometricSum(k-1);
+		}
+		return ans;
+	}
+	public static boolean pCheck(String str, int st, int ed) {
+	   if(st == ed) {
+		   return true;
+	   }
+	   if((str.charAt(st)) != (str.charAt(ed)))
+           return false;
+	   
+	   if(st<ed+1)
+           return pCheck(str,st+1,ed-1);
+	   
+	   return true;
+
+	}
+		
+	public static int sum(int n) {
+		if(n == 0) {
+			return 0;
+		}
+		else {
+		return (n%10) + sum(n/10);
+		}
+	}
+	
+	public static int mulRecursive(int m, int num) {
+		if(num ==0)return 0;
+		
+		return m + mulRecursive(m, num -1);
+	}
+	
+	public static int countZeros(int input) {
+      if(input == 0)return 1;
+      
+      if(input>0) {
+    	  if(input %10 ==0) {
+    		  totalCount++;
+    	  }
+    	  countZeros(input/10);  
+      }
+      return totalCount;
+	}
+	
+	public static int stringToInteger(String string) {
+		//"12345"
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          Scanner Inp =  new Scanner(System.in);
+          
+          //Geometric Sum
+          int n = Inp.nextInt();
+          double GeoMean = geometricSum(n);
+          System.out.println(GeoMean);
+          
+          //check palindrome
+          String str  = Inp.next();
+          boolean palindromecheck = pCheck(str, 0,str.length()-1);
+          System.out.println(palindromecheck);
+          
+          //sum of digits
+          int  digits =Inp.nextInt();
+          int total = sum(digits);
+          System.out.println(total);
+          
+          //multiplication using addition or subtraction
+          int m = Inp.nextInt();
+          int num = Inp.nextInt();
+          int multiplied  = mulRecursive(m, num);
+          System.out.println(multiplied); 
+          
+          //count zeros
+          int nos = Inp.nextInt();
+          int count  = countZeros(nos);
+          System.out.println(count);
+          
+          String Input   = Inp.next();
+          int intOutput = stringToInteger(Input);
+          System.out.println(intOutput);
+	}
+
+}
