@@ -1,0 +1,21 @@
+package Recursion;
+
+public class towerOfHanoi {
+
+	public static void towerHanoi(int n, char src, char hlpr, char dest) {
+		if(n==1) {
+			System.out.println("Move 1st disk from "+src+" to "+dest);
+			return;
+		}
+		towerHanoi(n-1, src, dest, hlpr);
+		System.out.println("Move " + n+ " th disks from"+src+" to "+dest);
+		towerHanoi(n-1, hlpr, src, dest);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		towerHanoi(4, 'A', 'B', 'C');
+		
+	}
+
+}
