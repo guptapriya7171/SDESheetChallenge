@@ -15,9 +15,9 @@ These algorithms are classified according to the type of search operation they p
 
 <h4> Sequential search </h4>
 The list or array of elements is traversed sequentially while checking every component of the set.
-<em>For example – Linear Search.</em>
+<em><b>For example – Linear Search.</b></em>
 
 <h4> Interval Search </h4>
 The interval search includes algorithms that are explicitly designed for searching in sorted data structures. In terms of efficiency, these algorithms are far better than linear search algorithms.
-<em>Example- Logarithmic Search, Binary search.</em>
+<em><b>Example- Logarithmic Search, Binary search.</b></em>
 
