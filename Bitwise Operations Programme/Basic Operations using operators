@@ -1,0 +1,17 @@
+class HelloWorld {
+    public static void main(String[] args) {
+       int a =5;
+       int b = 7;
+       
+       System.out.println("AND " + (a&b));
+       System.out.println("OR " + (a|b)); 
+       System.out.println("XOR " + (a^b));
+       System.out.println("Complement " + (~a));
+    }
+}
+
+/*
+AND =  Only if both the cases are true, outcome will be true 
+OR =   Only if both the cases are false, outcome will be false 
+XOR = The different cases are marked as 1
+Complement = Mathematical operation by adding 1 as a binary
