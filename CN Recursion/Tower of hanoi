@@ -19,3 +19,13 @@ public class towerOfHanoi {
 	}
 
 }
+
+//1. Source Helper Destination
+       |                /
+       |	     /  
+       |           /
+//2. Source Destination Helper
+       \           \
+         \           \
+             \         \
+//3. Helper Source Destination 
