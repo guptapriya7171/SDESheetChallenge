@@ -1,0 +1,59 @@
+GCD (Greatest Common Divisor) or HCF (Highest Common Factor) of two numbers is the largest number that divides both of them. 
+A simple and old  approach is Euclidean algorithm by subtraction.
+It is a process of repeat subtraction, carrying the result forward each time until the result is equal to the any one number being subtracted.
+If the answer is greater than 1, there is a GCD (besides 1). If the answer is 1, there is no common divisor (besides 1), and so both numbers are coprimes
+
+pseudo code for above approach:
+
+def gcd(a, b):
+ if a == b:
+ return a
+ if a > b:
+ gcd(a – b, b)
+ else:
+ gcd(a, b – a)
+
+At some point one number becomes factor of the other so instead of repeatedly subtracting till both become equal , we check if it is factor of the other .  
+
+Simple Code or Brute force for GCD:
+ public static int GCD(int a, int b)
+    {
+        // find and return GCD of two numbers;
+        int result = Math.min(a,b);
+          while (result > 0) {
+               if (a % result == 0 && b % result == 0) {
+                break;
+            }
+            result--;
+        }
+        return result;
+    }
+    
+Time Complexity : O(min(a,b)) 
+Auxiliary Space: O(1)  or constant
+
+An efficient solution is to use Euclidean algorithm which is the main algorithm used for this purpose.
+The idea is, GCD of two numbers doesn’t change if smaller number is subtracted from a bigger number. 
+
+
+Efficient Approach:
+public static int GCD(int a, int b)
+    {
+        // find and return GCD of two numbers;
+        if (a == 0)
+          return b;
+        if (b == 0)
+          return a;
+      
+        // base case
+        if (a == b)
+            return a;
+      
+        // a is greater
+        if (a > b)
+            return GCD(a-b, b);
+        return GCD(a, b-a);
+    }
+    
+Time Complexity: O(min(a,b))
+Auxiliary Space: O(min(a,b))
