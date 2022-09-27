@@ -52,3 +52,15 @@ Quicksort is considered to be one of the fastest sorting algorithms. It is also 
 Though the worst-case complexity is O(n^2), on an average it gives us O(nlogn) time complexity. You can also think of considering Merge sort, which is very similar to Quicksort but has more complexity than quicksort.
 
 ![This is an image](https://www.codingninjas.com/blog/wp-content/uploads/2020/11/image-170.png)
+
+Access Modifier:
+The access modifiers in Java specifies the accessibility or scope of a field, method, constructor, or class.
+The four access modifiers in Java are public, protected, default, and private.
+In CN it was mentioned that there three modifier, might be an old video.
+Include one more,
+## Four Types of Access Modifiers
+<h6>Private</h6>: We can access the private modifier only within the same class and not from outside the class.
+<h6>Default</h6>: We can access the default modifier only within the same package and not from outside the package. And also, if we do not specify any access modifier it will automatically consider it as default.
+<h6>Protected</h6>: We can access the protected modifier within the same package and also from outside the package with the help of the child class. If we do not make the child class, we cannot access it from outside the package. So inheritance is a must for accessing it from outside the package.
+<h6>Public</h6>: We can access the public modifier from anywhere. We can access public modifiers from within the class as well as from outside the class and also within the package and outside the package.
+
