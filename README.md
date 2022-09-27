@@ -57,7 +57,7 @@ Access Modifier:
 The access modifiers in Java specifies the accessibility or scope of a field, method, constructor, or class.
 The four access modifiers in Java are public, protected, default, and private.
 In CN it was mentioned that there three modifier, might be an old video.
-Include one more,
+Include one more that is protected,
 ## Four Types of Access Modifiers
 <h6>Private</h6>: We can access the private modifier only within the same class and not from outside the class.
 <h6>Default</h6>: We can access the default modifier only within the same package and not from outside the package. And also, if we do not specify any access modifier it will automatically consider it as default.
