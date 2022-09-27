@@ -1,0 +1,57 @@
+Code:
+package array2d;
+
+import java.util.Scanner;
+
+public class print2dArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner Inp = new Scanner(System.in);
+		int times = Inp.nextInt();
+		while(times-- >0) {
+			
+
+			int numRows =Inp.nextInt();
+			int numCols =Inp.nextInt();
+			
+		   int[][] input  = new int[numRows][numCols];
+		   for(int i = 0; i < numRows; i++){
+				for(int j = 0; j < numCols; j++){
+					input[i][j] = Inp.nextInt();
+				}
+			}
+		   print2DArray(input);
+		}
+		
+	}
+	public static void print2DArray(int input[][]) {
+		// Write your code here
+		       
+		       print2D(input,input.length,0);
+		    }
+		   
+		       public static void print2D(int arr[][],int n,int rowindex){
+		     
+		      if(n == 0){
+		               return;
+		           }
+		     
+		        int  m = arr[0].length; // no.of columns
+		         int l = arr.length;// no. of rows
+		         int steps = n;
+		           
+		            while(steps>0) {
+		            for(int j=0;j<m;j++) {
+		            System.out.print(arr[rowindex][j]+" ");
+		            }
+		            System.out.println();
+		            steps--;
+		            }
+		           
+		      rowindex+=1;
+		     
+		      print2D(arr, n-1,rowindex);
+		         }
+		}
