@@ -1,5 +1,87 @@
 # SDESheetChallenge  ![example workflow](https://img.shields.io/badge/DSA-Algo-blue)
 
+## RoadMap
+<h3>Fundamentals </h3>
+1. Arrays
+   - Basic array questions
+   - Kandane's Algorithm
+   - Dutch National Flag Algo
+   - Multi-dimensional arrays
+2. Time andSpace Complexity
+3. Strings
+   String Manipulation
+   - Concatenation in Strings
+   - Substrings
+   String Comparison
+   - Lexiographical comparison l
+4. Recursion & Backtracking
+5. Sorting
+   - Bubble Sort
+   - Selection Sort
+   - Insertion Sort
+   - Merge Sort
+   - Quick Sort
+   - Randomised Quick Sort
+6. Searching
+   - Linear Search
+   - Binary Search
+7. Object Oriented Programming Basics
+
+<h3>Intermediate</h3>
+  1. LinkedList
+  2. Stacks
+  3. Queues
+  4. Dequeue
+  5. Hashing 
+  6. Two pointer approach
+  7. Sliding Window
+  8. Greedy approach
+
+<h3>Take a pause</h3>
+  1. Revision  and Practice
+  2. Online contests on portals like Codechef and Codeforces.
+
+<h3>The Final Hurdle/h3>
+The Advance Topics
+  - Binary Trees
+  - Binary Search Trees
+  - Priority Queues &Heaps
+  - Graphs
+  - Dynamic Programming
+  - Tries
+  - String Algorithms(Pattern Matching)
+
+<h3>Becoming a pro</h3>
+  - Revision and Practice 
+      Use color code(green , yellow and red)
+  - Consistency instead of intensity
+  - Resources
+      Leetcode
+      InterviewBit
+      GFG
+      
+<h3>Interview Preparations</h3>
+Step 1: Go through interview experiances of the particular company on GFG Archives and Leetcode.
+Step 2: Revise the questions that you have already attempted. Start with red questions, followed by yellow and then finally the green ones.
+        Avoid learning new concepts.
+Step 3: CS Fundamentals
+      - OOP
+      - DBMS
+      - Operating Systems
+      - Computer Networks
+ Step 4: Look up the company for which you're  interviewing.
+ 
+ <h3>The Interview Experiances</h3>
+ Step 1:
+      - Single or Multiple rounds
+      - Stay Calm & Focused
+      - Proper Introduction
+ Step 2:
+      - Problem Solving involving DSA
+      - CS Fundamentals
+      - Behavioral Questions
+ 
+ 
 <h3>The repository includes all important question along with an easy and the optimized solution.</h3>
 
 Note:
@@ -56,7 +138,7 @@ Though the worst-case complexity is O(n^2), on an average it gives us O(nlogn) t
 Access Modifier:
 The access modifiers in Java specifies the accessibility or scope of a field, method, constructor, or class.
 The four access modifiers in Java are public, protected, default, and private.
-In CN it was mentioned that there three modifier, might be an old video.
+
 Include one more that is protected,
 ## Four Types of Access Modifiers
 <h6>Private</h6> We can access the private modifier only within the same class and not from outside the class.
