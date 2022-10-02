@@ -41,7 +41,7 @@
   1. Revision  and Practice<br/>
   2. Online contests on portals like Codechef and Codeforces.<br/>
 
-<h3>The Final Hurdle/h3><br/>
+<h3>The Final Hurdle</h3><br/>
 The Advance Topics<br/>
   - Binary Trees<br/>
   - Binary Search Trees<br/>
