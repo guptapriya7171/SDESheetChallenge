@@ -1,85 +1,85 @@
 # SDESheetChallenge  ![example workflow](https://img.shields.io/badge/DSA-Algo-blue)
 
 ## RoadMap
-<h3>Fundamentals </h3>
-1. Arrays
-   - Basic array questions
-   - Kandane's Algorithm
-   - Dutch National Flag Algo
-   - Multi-dimensional arrays
-2. Time andSpace Complexity
-3. Strings
-   String Manipulation
-   - Concatenation in Strings
-   - Substrings
-   String Comparison
-   - Lexiographical comparison l
-4. Recursion & Backtracking
-5. Sorting
-   - Bubble Sort
-   - Selection Sort
-   - Insertion Sort
-   - Merge Sort
-   - Quick Sort
-   - Randomised Quick Sort
-6. Searching
-   - Linear Search
-   - Binary Search
-7. Object Oriented Programming Basics
+<h3>Fundamentals</h3><br/>
+1. Arrays<br/>
+   - Basic array questions<br/>
+   - Kandane's Algorithm<br/>
+   - Dutch National Flag Algo<br/>
+   - Multi-dimensional arrays<br/>
+2. Time andSpace Complexity<br/>
+3. Strings<br/>
+   String Manipulation<br/>
+   - Concatenation in Strings<br/>
+   - Substrings<br/>
+   String Comparison<br/>
+   - Lexiographical comparison l<br/>
+4. Recursion & Backtracking<br/>
+5. Sorting<br/>
+   - Bubble Sort<br/>
+   - Selection Sort<br/>
+   - Insertion Sort<br/>
+   - Merge Sort<br/>
+   - Quick Sort<br/>
+   - Randomised Quick Sort<br/>
+6. Searching<br/>
+   - Linear Search<br/>
+   - Binary Search<br/>
+7. Object Oriented Programming Basics<br/>
 
-<h3>Intermediate</h3>
-  1. LinkedList
-  2. Stacks
-  3. Queues
-  4. Dequeue
-  5. Hashing 
-  6. Two pointer approach
-  7. Sliding Window
-  8. Greedy approach
+<h3>Intermediate</h3><br/>
+  1. LinkedList<br/>
+  2. Stacks<br/>
+  3. Queues<br/>
+  4. Dequeue<br/>
+  5. Hashing <br/>
+  6. Two pointer approach<br/>
+  7. Sliding Window<br/>
+  8. Greedy approach<br/>
 
-<h3>Take a pause</h3>
-  1. Revision  and Practice
-  2. Online contests on portals like Codechef and Codeforces.
+<h3>Take a pause</h3><br/>
+  1. Revision  and Practice<br/>
+  2. Online contests on portals like Codechef and Codeforces.<br/>
 
-<h3>The Final Hurdle/h3>
-The Advance Topics
-  - Binary Trees
-  - Binary Search Trees
-  - Priority Queues &Heaps
-  - Graphs
-  - Dynamic Programming
-  - Tries
-  - String Algorithms(Pattern Matching)
+<h3>The Final Hurdle/h3><br/>
+The Advance Topics<br/>
+  - Binary Trees<br/>
+  - Binary Search Trees<br/>
+  - Priority Queues &Heaps<br/>
+  - Graphs<br/>
+  - Dynamic Programming<br/>
+  - Tries<br/>
+  - String Algorithms(Pattern Matching)<br/>
 
-<h3>Becoming a pro</h3>
-  - Revision and Practice 
-      Use color code(green , yellow and red)
-  - Consistency instead of intensity
-  - Resources
-      Leetcode
-      InterviewBit
-      GFG
+<h3>Becoming a pro</h3><br/>
+  - Revision and Practice<br/> 
+      Use color code(green , yellow and red)<br/>
+  - Consistency instead of intensity<br/>
+  - Resources<br/>
+      Leetcode<br/><br/>
+      InterviewBit<br/>
+      GFG<br/>
       
-<h3>Interview Preparations</h3>
-Step 1: Go through interview experiances of the particular company on GFG Archives and Leetcode.
-Step 2: Revise the questions that you have already attempted. Start with red questions, followed by yellow and then finally the green ones.
-        Avoid learning new concepts.
-Step 3: CS Fundamentals
-      - OOP
-      - DBMS
-      - Operating Systems
-      - Computer Networks
- Step 4: Look up the company for which you're  interviewing.
+<h3>Interview Preparations</h3><br/>
+Step 1: Go through interview experiances of the particular company on GFG Archives and Leetcode.<br/>
+Step 2: Revise the questions that you have already attempted. Start with red questions, followed by yellow and then finally the green ones.<br/>
+        Avoid learning new concepts.<br/>
+Step 3: CS Fundamentals<br/>
+      - OOP<br/>
+      - DBMS<br/>
+      - Operating Systems<br/><br/>
+      - Computer Networks<br/>
+ Step 4: Look up the company for which you're  interviewing.<br/>
  
- <h3>The Interview Experiances</h3>
- Step 1:
-      - Single or Multiple rounds
-      - Stay Calm & Focused
-      - Proper Introduction
- Step 2:
-      - Problem Solving involving DSA
-      - CS Fundamentals
-      - Behavioral Questions
+ <h3>The Interview Experiances</h3><br/>
+ Step 1:<br/>
+      - Single or Multiple rounds<br/>
+      - Stay Calm & Focused<br/>
+      - Proper Introduction<br/>
+ Step 2:<br/>
+      - Problem Solving involving DSA<br/>
+      - CS Fundamentals<br/>
+      - Behavioral Questions<br/>
  
  
 <h3>The repository includes all important question along with an easy and the optimized solution.</h3>
