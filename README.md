@@ -38,7 +38,7 @@
   8. Greedy approach<br/>
 
 <h3>Take a pause</h3><br/>
-  1. Revision  and Practice<br/>
+  1. Revision and Practice<br/>
   2. Online contests on portals like Codechef and Codeforces.<br/>
 
 <h3>The Final Hurdle</h3><br/>
