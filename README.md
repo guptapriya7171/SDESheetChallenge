@@ -84,7 +84,7 @@ Step 3: CS Fundamentals<br/>
  
 <h3>The repository includes all important question along with an easy and the optimized solution.</h3>
 
-Note:
+<h6>Note:</h6>
 Data structures are referred to as a collection of data values and relationships between them, functions, and operations applicable to the data. so that, users can easily access and modify the data efficiently. Data structures help us to manage large amounts of data, such as huge databases. Efficient data structures are the fundamental basis for efficient algorithms
 
 # Searching
