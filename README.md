@@ -65,7 +65,7 @@ Step 1: Go through interview experiances of the particular company on GFG Archiv
 Step 2: Revise the questions that you have already attempted. Start with red questions, followed by yellow and then finally the green ones.<br/>
         Avoid learning new concepts.<br/>
 Step 3: CS Fundamentals<br/>
-      - OOP<br/>
+      - OOPs<br/>
       - DBMS<br/>
       - Operating Systems<br/><br/>
       - Computer Networks<br/>
