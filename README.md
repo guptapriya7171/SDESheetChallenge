@@ -5,9 +5,9 @@
 1. Arrays<br/>
    - Basic array questions<br/>
    - Kandane's Algorithm <br/>
-     <b>(to find the largest sum of the continous subarray in an array)</b><br/>
+     <b>(To find the largest sum of the continous subarray in an array)</b><br/>
    - Dutch National Flag Algo<br/>
-     <b>(to sort 0s,1s and 2s)</b><br/>
+     <b>(To sort 0s,1s and 2s)</b><br/>
    - Multi-dimensional arrays<br/>
      <b>(Array of arrays mentioned as 2d array and 3d array)</b><br/>
 2. Time andSpace Complexity<br/>
