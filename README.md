@@ -4,8 +4,10 @@
 <h3>Fundamentals</h3><br/>
 1. Arrays<br/>
    - Basic array questions<br/>
-   - Kandane's Algorithm<br/>
+   - Kandane's Algorithm <br/>
+     (to find the largest sum of the continous subarray in an array)<br/>
    - Dutch National Flag Algo<br/>
+     (to sort 0s,1s and 2s)
    - Multi-dimensional arrays<br/>
 2. Time andSpace Complexity<br/>
 3. Strings<br/>
