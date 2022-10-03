@@ -1,0 +1,69 @@
+Code: 
+package array2d;
+
+import java.util.Scanner;
+
+public class totalNumsOfEvensOdds {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		int testCases  = sc.nextInt();
+		int eachTestCaseValues;
+		//Big 2d Array
+		int [][] arrayMain = new int[testCases][];
+		
+		//for loop to take input for each testcases
+		for(int i=0;i<arrayMain.length;i++) {
+			
+			eachTestCaseValues  = sc.nextInt();
+			
+			arrayMain[i] = new int[eachTestCaseValues];
+			
+			for (int j = 0; j < arrayMain[i].length; j++) {
+                arrayMain[i][j] = sc.nextInt();
+            }
+		}
+		
+		for(int i=0;i<arrayMain.length;i++) {
+			int nEvenNums=0;
+			int nOddNums = 0;
+			
+			System.out.println("TestCase " + i + " with " + arrayMain[i].length+ " values:");
+			
+			 for (int j = 0; j < arrayMain[i].length; j++) {
+	                System.out.print(arrayMain[i][j] + " ");
+	 
+	                // even & odd counter updated as eligible number is found
+	                if (arrayMain[i][j] % 2 == 0) {
+	                	nEvenNums++;
+	                }
+	                else {
+	                	nOddNums++;
+	                }
+	            }
+			 System.out.println();
+			 
+	            // Prints total numbers of
+	            // even & odd
+	            System.out.println(
+	                "Total Even numbers: " + nEvenNums  + ", Total Odd numbers: " + nOddNums);
+		}
+		
+	}
+
+}
+Input And Output:
+2
+2
+1 2
+3
+1 2 3
+
+TestCase 0 with 2 values:
+1 2 
+Total Even numbers: 1, Total Odd numbers: 1
+TestCase 1 with 3 values:
+1 2 3 
+Total Even numbers: 1, Total Odd numbers: 2
