@@ -10,7 +10,7 @@
      <b>(To sort 0s,1s and 2s)</b><br/>
    - Multi-dimensional arrays<br/>
      <b>(Array of arrays mentioned as 2d array and 3d array)</b><br/>
-2. Time andSpace Complexity<br/>
+2. Time and Space Complexity<br/>
 3. Strings<br/>
    String Manipulation<br/>
    - Concatenation in Strings<br/>
