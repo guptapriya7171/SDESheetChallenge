@@ -1,0 +1,43 @@
+CODE:
+
+package array2d;
+import java.util.*;
+public class searchIndicesAndPrint {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner Inp = new Scanner(System.in);
+	    int rows = Inp.nextInt();
+	    int cols = Inp.nextInt();
+	    
+	    int arr[][] = new int[rows][cols];
+	    
+	    for(int i=0;i<rows;i++) {
+	    	for(int j=0;j<cols;j++) {
+	    		arr[i][j] = Inp.nextInt();
+	    	}
+	    }
+	    System.out.println("Please type the number you want:");
+	    int Value = Inp.nextInt();
+		
+	    for(int a=0;a<rows;a++) {
+	    	for(int b=0;b<cols;b++) {
+	          if(arr[a][b] == Value) {
+	        	  System.out.println("Row number of the value is : "+a+" and column number is "+ b);
+	          }
+	    	}
+	    	}
+	}
+
+}
+Input And Output:
+4
+4
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+Please type the number you want:
+6
+Row number of the value is : 1 and column number is 1
