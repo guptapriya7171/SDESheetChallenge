@@ -1,0 +1,24 @@
+CODE:
+public static String concatenateStrings(ArrayList<String>arr)
+{
+    //Your code here
+  
+   
+    //Initializing an empty String
+	    String ans="";
+	    
+	    //concatenating all the String
+	    //of the ArrayList with the ans String
+	    for(String s:arr)
+	    ans+=s;
+	    
+	    //returning the concatenated Strings
+	    return ans;
+}
+Input And Output:
+Input:
+5
+geeks for geeks and good
+
+Output:
+geeksforgeeksandgood
