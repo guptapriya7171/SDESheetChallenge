@@ -14,9 +14,14 @@ class GFG{
 // of the string p in s. Return -1 if the
 // string doesnot exists in s.
 public static int findPattern(String s, String p){
-    // code here
-    
-    return s.indexOf(p);
+     int index = 0;
+    if(s.contains(p)){
+        index = s.indexOf(p); 
+    }
+    else{
+        return -1;
+    }
+    return index;
          
    
 }
