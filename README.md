@@ -18,7 +18,9 @@
    - Concatenation in Strings<br/>
      <ul>
      <b><li>concat()</b></li>
-     <b><li>SqueezeString.squeeze(<i>string</i>);</li></b><br/></ul>
+     <b><li>SqueezeString.squeeze(<i>string</i>);</li></b><br/>
+     <b><li>string.split(<i>symbol</i>);</li></b><br/>
+     </ul>
    - Substrings<br/>
    String Comparison<br/>
    - Lexiographical comparison l<br/>
@@ -154,3 +156,5 @@ Include one more that is protected,
 <h6>Protected</h6> We can access the protected modifier within the same package and also from outside the package with the help of the child class. If we do not make the child class, we cannot access it from outside the package. So inheritance is a must for accessing it from outside the package.
 <h6>Public</h6> We can access the public modifier from anywhere. We can access public modifiers from within the class as well as from outside the class and also within the package and outside the package.
 
+## Important Links
+1. https://www.codingninjas.com/blog/2021/09/17/30-java-string-interview-questions/
