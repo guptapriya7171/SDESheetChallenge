@@ -16,8 +16,9 @@
 3. Strings<br/>
    String Manipulation<br/>
    - Concatenation in Strings<br/>
-     <b>1.concat()</b><br/>
-     <b>2.SqueezeString.squeeze(<i>string</i>);</b><br/>
+     <ul>
+     <b><li>1.concat()</b></li><br/>
+     <b><li>.SqueezeString.squeeze(<i>string</i>);</li></b><br/></ul>
    - Substrings<br/>
    String Comparison<br/>
    - Lexiographical comparison l<br/>
