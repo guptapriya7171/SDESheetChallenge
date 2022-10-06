@@ -5,14 +5,14 @@
 1. Arrays<br/>
    - Basic array questions<br/>
    - Kandane's Algorithm <br/>
-     <b>(To find the largest sum of the continous subarray in an array)</b><br/>
+       <b>(To find the largest sum of the continous subarray in an array)</b><br/>
    - Dutch National Flag Algo<br/>
-     <b>(To sort 0s,1s and 2s)</b><br/>
+       <b>(To sort 0s,1s and 2s)</b><br/>
    - Multi-dimensional arrays<br/>
-     <b>(Array of arrays mentioned as 2d array and 3d array)</b><br/>
+       <b>(Array of arrays mentioned as 2d array and 3d array)</b><br/>
 2. Time and Space Complexity<br/>
-    <b>(Order of growth: Ignore lower order terms and ignore leading term constant, 
-     c < log log n < log n < n ^1/3 <  n ^1/2 < n < n^2 < n^3 < n^4 < 2^n < n^n ----Comparison</b>)<br/>
+       <b>(Order of growth: Ignore lower order terms and ignore leading term constant, 
+        c < log log n < log n < n ^1/3 <  n ^1/2 < n < n^2 < n^3 < n^4 < 2^n < n^n ----Comparison</b>)<br/>
 3. Strings<br/>
    String Manipulation<br/>
    - Concatenation in Strings<br/>
