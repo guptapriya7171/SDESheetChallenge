@@ -18,7 +18,7 @@
    - Concatenation in Strings<br/>
      <ul>
      <b><li>concat()</b></li>
-     <b><li>SqueezeString.squeeze(<i>string</i>);</li></b><br/>
+     <b><li>SqueezeString.squeeze(<i>string</i>);</li></b>
      <b><li>string.split(<i>symbol</i>);</li></b><br/>
      </ul>
    - Substrings<br/>
