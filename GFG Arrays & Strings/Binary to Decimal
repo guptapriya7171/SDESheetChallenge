@@ -4,13 +4,14 @@ class GFG
 {
     public static void binToDec(String s)
     {
-        int m = 0;
-        int k = 1;
-        for(int i = s.length() - 1; i >= 0; i--){
-        m += (s.charAt(i) - '0') * k;
-        k = k * 2;
+        int result = 0;
+        int power = 1;
+        
+        for(int i = str.length() - 1; i >= 0; i--){
+        result += (str.charAt(i) - '0') * power;
+        power = power * 2;
     }
-        System.out.println(m);
+        System.out.println(result);
     }
 
     public static void main(String[] args)
