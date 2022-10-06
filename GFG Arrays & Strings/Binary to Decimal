@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class GFG
 {
-    public static void binToDec(String s)
+    public static void binToDec(String str)
     {
         int result = 0;
         int power = 1;
