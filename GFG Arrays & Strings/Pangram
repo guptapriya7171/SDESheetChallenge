@@ -1,0 +1,43 @@
+CODE:
+package String;
+//A String is called Panagram if it is using every letter of a given alphabet at least once.
+import java.util.*;
+public class panagram {
+
+	public static boolean checkPanagram(String s) {
+		s = s.toLowerCase();
+		int n = s.length();
+		if(n<26) {
+			return false;
+		}
+		boolean visited[] = new boolean[26];
+		for(int i=0;i<n;i++) {
+			char x = s.charAt(i);
+			
+			if(x>='a' && x<='z')
+				visited[x-'a'] = true;
+		}
+		
+		for(int i=0;i<26;i++) {
+			if(visited[i] == false) {
+				return false;
+			}
+		}
+		return true;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner str =  new Scanner(System.in);
+		System.out.println("Enter the string:");
+		String Input = str.next();
+		boolean output = checkPanagram(Input);
+       System.out.println(output);
+		
+	}
+
+}
+Output:
+Enter the string:
+Abcdefghijklmnopqrstuvwxyz
+true
