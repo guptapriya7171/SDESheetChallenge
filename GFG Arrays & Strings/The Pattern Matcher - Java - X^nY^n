@@ -34,3 +34,16 @@ class Geeks{
         System.out.println((flag ? 1 : 0));
     }
 }
+
+
+Input:
+xyx
+
+Output:
+0
+
+Input:
+xyxxyy
+
+Output:
+1
