@@ -1,0 +1,39 @@
+String is a collection of character. 
+In java every character is of 16 bits. Hence, Java uses utf-16 encoding for storing the characters.
+We can create string in 4 ways.
+a. Array/Arraylist of characters
+b. String Class 
+    Have inbuild functions
+    Immutable
+    Automatically ThreadSafe
+c. StringBuffer Class
+    Mutable
+    Can be used in a multithreaded environment
+d. StringBuilder Class
+    Mutable
+    Cannot be used only within a thread
+    
+ Example:
+ class Test{
+ public static void main(String[] args){
+  String str = "geeks";
+  System.out.println(str.length());
+  System.out.println(str.charAt(3));
+  System.out.println(str.substring(2));
+  System.out.println(str.substring(2,5));
+   // start index is included but not the last index
+ }
+ }
+ Output:
+ 5
+ k
+ eks
+ eks
+
+Common String Inbuild Functions:
+contains(),
+equals(),
+compareTo(),
+indexOf()
+
+
