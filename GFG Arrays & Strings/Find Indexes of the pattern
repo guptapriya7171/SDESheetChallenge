@@ -1,0 +1,44 @@
+CODE:
+package String;
+//A String is called Panagram if it is using every letter of a given alphabet at least once.
+import java.util.*;
+public class panagram {
+
+	public static void checkPatternIndex(String s1, String s2) {
+	
+		 int pos = s1.indexOf(s2);
+		 System.out.println(pos);
+		 while(pos >= 0) {
+			 System.out.println(pos +" ");
+//			 int string2 = s2+1;
+			 pos = 	s1.indexOf(s2, pos+1 );
+		 }
+}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner str =  new Scanner(System.in);
+		System.out.println("Enter the string one:");
+		String InputOne = str.nextLine();
+		System.out.println("Enter the string two:");
+		String InputTwo = str.nextLine();
+		
+		checkPatternIndex(InputOne, InputTwo);
+      
+		
+	}
+	//geeks for geeks
+	//geeks
+
+}
+
+OUTPUT:
+Enter the string one:
+//geeks for geeks
+Enter the string two:
+geeks
+3
+3 
+13 
