@@ -1,8 +1,9 @@
 CODE:
 package String;
-//A String is called Panagram if it is using every letter of a given alphabet at least once.
+//Return indexes of the pattern
+
 import java.util.*;
-public class panagram {
+public class patternIndex {
 
 	public static void checkPatternIndex(String s1, String s2) {
 	
