@@ -1,0 +1,29 @@
+CODE:
+package String;
+import java.util.*;
+public class keyMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		StringBuilder sb = new StringBuilder("abcda");
+		sb.reverse();
+		System.out.println(sb);
+		sb.append("efg");
+		System.out.println(sb);
+		sb.setCharAt(1,'h');
+		System.out.println(sb);
+		sb.delete(0,2);
+		System.out.println(sb);
+		sb.insert(1, "efe");
+		System.out.println(sb);
+	}
+
+}
+
+OUTPUT:
+adcba
+adcbaefg
+ahcbaefg
+cbaefg
+cefebaefg
