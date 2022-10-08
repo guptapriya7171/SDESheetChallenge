@@ -86,3 +86,13 @@ class Geeks{
 //{ Driver Code Starts.
 
 // } Driver Code Ends
+Input:
+madame
+madam
+
+Output:
+1
+
+Explanation:
+String S1 = madame, string S2 = madam. character 'e' in 
+first string is need to be deleted to make S1 equal to S2.
