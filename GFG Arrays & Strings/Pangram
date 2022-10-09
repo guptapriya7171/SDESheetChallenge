@@ -41,3 +41,36 @@ Output:
 Enter the string:
 Abcdefghijklmnopqrstuvwxyz
 true
+
+CODE:
+class Solution
+{
+
+    // Complete the function
+    // str: input string
+    public static boolean isPanagram(String str)
+    {
+        // Check if given string is panagram
+         str = str.toLowerCase();
+         boolean flag = true;
+         int hash[]= new int[26];
+         
+         for(int i=0;i<26;i++){
+             hash[i] = 0;
+         }
+         for(int i=0;i<str.length();i++){
+             hash[str.charAt(i)-'a']++;
+         }
+         for(int i=0;i<hash.length;i++){
+             if(hash[i] == 0){
+                 flag = false;
+             }
+            
+         }
+         return flag;
+        
+    }
+}
+Input:
+s = Thequickbrownfoxjumpsoverthelazydog
+Output: 1
