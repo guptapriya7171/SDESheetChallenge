@@ -19,11 +19,11 @@
      <ul>
      <b><li>concat()</b></li>
      <b><li>SqueezeString.squeeze(<i>string</i>);</li></b>
-     <b><li>string.split(<i>symbol</i>);</li></b><br/>
+     <b><li>string.split(<i>symbol</i>);</li></b>
      </ul>
    - Substrings<br/>
    String Comparison<br/>
-   - Lexiographical comparison l<br/>
+   - Lexiographical comparison <br/>
 4. Recursion & Backtracking<br/>
 5. Sorting<br/>
    - Bubble Sort<br/>
