@@ -15,3 +15,49 @@ public static char extraChar(String s1, String s2){
     return res;
     
 }
+
+Same Questions but the exception is that either of the string can be greater among both.
+CODE:
+public static Character oneExtraCharacter(String s1, String s2)
+{
+   
+        String smallStr;
+        String largeStr;
+ 
+        // Determine String with extra character.
+        if(s1.length() > s2.length()) {
+            smallStr = s2;
+            largeStr = s1;
+        } else {
+            smallStr = s1;
+            largeStr = s2;
+        }
+ 
+        int smallStrCodeTotal = 0;
+        int largeStrCodeTotal = 0;
+        int i = 0;
+ 
+        // Add character codes of both the strings
+        for(; i < smallStr.length(); i++) {
+            smallStrCodeTotal += smallStr.charAt(i);
+            largeStrCodeTotal += largeStr.charAt(i);
+        }
+ 
+        // Add last character code of large String.
+        largeStrCodeTotal += largeStr.charAt(i);
+ 
+        // Minus the character code of smaller string from
+        // the character code of large string.
+        // The result will be the extra character code.
+        int intChar = largeStrCodeTotal - smallStrCodeTotal;       
+        return (char)intChar;
+}
+
+Input:
+abba baxab
+
+Output:
+x
+
+Explanation:
+Both the strings have abba characters but s2 has an extra x
