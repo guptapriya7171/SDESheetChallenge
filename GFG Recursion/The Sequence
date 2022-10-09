@@ -1,0 +1,22 @@
+CODE:
+class Sequence
+{
+    // N: input element 
+    public static int theSequence(int N)
+    {
+        // your code here
+        // when n=2
+        // s(2) = 2 +2*(S(1))=2+2(1+1*1) = 6
+        
+        if(N == 0){
+           return 1;
+        }
+        
+        return N + N * theSequence(N-1);
+    }
+
+}
+
+Input:
+n = 2
+Output: 6
