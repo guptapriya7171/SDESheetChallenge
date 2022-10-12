@@ -76,7 +76,6 @@ class Solution {
         }
 
         path(m, 0, 0, "", n);
-        Collections.sort(result);
         return result;
     }
 }
