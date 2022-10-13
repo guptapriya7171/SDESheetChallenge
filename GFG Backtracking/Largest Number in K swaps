@@ -1,78 +1,49 @@
 CODE:
-//{ Driver Code Starts
-import java.io.*;
-import java.util.*;
-class GfG
-{
-    public static void main(String args[])throws IOException
-        {
-            Scanner sc = new Scanner(System.in);
-            int t = sc.nextInt();
-            while(t-->0)
-                {
-                    int k = sc.nextInt();
-                    String str = sc.next();
-                    Solution obj = new Solution();
-                    System.out.println(obj.findMaximumNum(str, k));
-                }
-        }
-}
-// } Driver Code Ends
+package backtracking;
 
+import java.util.Scanner;
 
+public class LargestNumInKSwaps {
+	
+	public static String swap(String str, int i, int j) {
+		char ith = str.charAt(i);
+		char jth = str.charAt(j);
+		
+		String left = str.substring(0,i);
+		String middle = str.substring(i+1, j);
+		String right = str.substring( j+1);
+		
+		return left +jth+middle+ith+right;
+	}
+	static String max;
+	public static void findMaximum(String str, int k) {
+		if(Integer.parseInt(str) > Integer.parseInt(max)) {
+			max = str;
+		}
+		if(k == 0) {
+			return;
+		}
+		for(int i=0;i<str.length()-1;i++) {
+			for(int j=i+1;j<str.length();j++) {
+				if(str.charAt(j) > str.charAt(i)) {
+					str = swap(str, i,j);
+					findMaximum(str, k-1);
+					str = swap(str, i, j);
+				}
+			}
+		}
+	}
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
-class Res {
-    static String max = "";
-}
-
-class Solution
-{
-    //Function to set highest possible digits at given index.
-    public static void findMaximumNumUtil(char ar[], int k, Res r)
-    {
-        if (k == 0) return;
-        int n = ar.length;
-        for (int i = 0; i < n - 1; i++)
-        {
-            for (int j = i + 1; j < n; j++)
-            {
-                //if digit at position i is less than digit at position j, 
-                //we swap them and check for maximum number so far.
-                if (ar[j] > ar[i])
-                {
-                    char temp = ar[i];
-                    ar[i] = ar[j];
-                    ar[j] = temp;
-
-                    String st = new String(ar);
-                    
-                    //if current number is more than maximum so far
-                    if (r.max.compareTo(st) < 0)
-                    {
-                        r.max = st;
-                    }
-                    //calling recursive function to set the next digit.
-                    findMaximumNumUtil(ar, k - 1, r);
-
-                    // backtracking
-                    temp = ar[i];
-                    ar[i] = ar[j];
-                    ar[j] = temp;
-                }
-            }
-        }
-    }
-    
-    //Function to find the largest number after k swaps.
-    public static String findMaximumNum(String str, int k)
-    {
-        Res r = new Res();
-        r.max = str;
-        findMaximumNumUtil(str.toCharArray(), k, r);
-        //returning the result.
-        return r.max;
-    }
+		Scanner scn = new Scanner(System.in);
+		String str = scn.next();
+		int k = scn.nextInt();
+		max = str;
+		findMaximum(str, k);
+		System.out.println(max);
+	}
 
 }
 Input:
