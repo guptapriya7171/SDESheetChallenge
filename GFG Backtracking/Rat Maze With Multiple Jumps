@@ -1,0 +1,112 @@
+CODE:
+//{ Driver Code Starts
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+  public class GFG {
+    public static int N = 0;
+    public static void main(String[] args) {
+        // code
+        Scanner a = new Scanner(System.in);
+        int T = a.nextInt();
+        for (int z = 0; z < T; z++) {
+            N = a.nextInt();
+
+            int[][] maze = new int[N][N];
+            for (int y = 0; y < N; y++) {
+                for (int o = 0; o < N; o++) maze[y][o] = a.nextInt();
+            }
+
+            new RatInMaze().solve(maze, N);
+        }
+    }
+
+    public static void print(int N, int[][] sol) {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                System.out.print(sol[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+// } Driver Code Ends
+
+
+
+class RatInMaze 
+{
+    //Function to find the minimum number of Hops required for the rat to 
+    //reach from the source block to the destination block.
+    public static void solve(int[][] maze, int N)
+    {
+        // add your code here
+      int ans[][] = new int[N][N];
+      
+      if(!ratmaze(maze, ans, 0, 0)){
+      System.out.println("-1");
+      }
+      else{
+          for(int i=0;i<N;i++){
+              for(int j=0;j<N;j++){
+                System.out.print(ans[i][j]+" ");  
+              }
+              System.out.println();
+          }
+      }
+      
+    }
+    public static boolean withinboundry(int i,int j, int maze[][]){
+        if((i>=maze.length) || (j>=maze[0].length) || (maze[i][j] ==0)){
+            return false;
+        }
+        return true;
+    }
+    public static boolean ratmaze(int maze[][], int ans[][], int i, int j){
+        
+        if((i==(maze.length-1)) && (j==(maze[0].length-1))){
+            ans[i][j] = 1;
+            return true;
+        }
+        if(withinboundry(i,j, maze)){
+            ans[i][j] = 1;
+        
+        for(int noofsteps = 1; noofsteps<= maze[i][j];noofsteps++){
+            if(ratmaze(maze, ans, i, j+noofsteps))return true;//right
+            if(ratmaze(maze,ans, i+noofsteps, j))return true;//down
+        }
+        ans[i][j]=0;
+        }
+        return false;
+    }
+    
+}
+
+
+Input:
+N = 4
+maze[][] = {{2,1,0,0},{3,0,0,1},
+{0,1,0,1},{0,0,0,1}}
+Output:
+1 0 0 0
+1 0 0 1
+0 0 0 1
+0 0 0 1
+Explanation: Rat started with m[0][0] and
+can jump up to 2 steps right/down. First
+check m[0][1] as it is 1, next check
+m[0][2], this won't lead to the solution.
+Then check m[1][0], as this is 3(non-zero)
+so we can make 3 jumps to reach m[1][3].
+From m[1][3] we can move downwards taking
+1 jump each time to reach destination at
+m[3][3]. 
+
+Input:
+N = 4
+maze[][] = {{2,1,0,0}{2,0,0,1},
+{0,1,0,1},{0,0,0,1}}
+Output: -1
+Explanation: As no path exists, so -1.
