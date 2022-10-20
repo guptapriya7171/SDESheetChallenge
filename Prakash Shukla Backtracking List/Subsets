@@ -30,9 +30,9 @@ public class arrayBt {
 	      
 	       for(int num : nums){    //1 2 3
 	         
-	         int n = res.size();        //1    //2   //4
+	       int n = res.size();        //1    //2   //4
 	         
-	         for(int j=0;j<n;j++){ //0times
+	       for(int j=0;j<n;j++){ //0times
 
 	             List<Integer> temp = new ArrayList(res.get(j));   //[] [1][2]
 	             temp.add(num);//[1]  // [2]       //[3]
