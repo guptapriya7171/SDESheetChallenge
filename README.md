@@ -32,7 +32,7 @@
    - Bubble Sort<br/>
    - Selection Sort<br/>
    - Insertion Sort<br/>
-      --1. one for loop(1ton)<br> 2. Let j =i-1 <br> 3. declare counter(key) = arr[i] <br> 4. the while loop with 2 conditions.  <br>5.  Place the value as key in the proper position(arr[j+1]=current).<br>
+      --i. one for loop(1ton)<br> ii. Let j =i-1 <br> iii. declare counter(key) = arr[i] <br> iv. the while loop with 2 conditions.  <br>v.  Place the value as key in the proper position(arr[j+1]=current).<br>
    - Merge Sort<br/>
    - Quick Sort<br/>
    - Randomised Quick Sort<br/>
