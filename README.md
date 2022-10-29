@@ -34,6 +34,7 @@
    - Insertion Sort<br/>
       i. one for loop(1ton)<br> ii. Let j =i-1 <br> iii. declare counter(key) = arr[i] <br> iv. the while loop with 2 conditions.  <br>v.  Place the value as key in the proper position(arr[j+1]=current).<br>
    - Merge Sort<br/>
+     1. You will be given two arrays and we have to compare two array's element and then insert the remaining elements which be given as an output.
    - Quick Sort<br/>
    - Randomised Quick Sort<br/>
 6. Searching<br/>
