@@ -42,7 +42,7 @@
      ii. In quickSort method, we are selecting 3 elements : arr, low, high.<br>
      iii. Pass the condition to run the partition till the low is lesser than high.<br>
          <i>code<br>
-         if(low < high) { </i><br>
+         if(low < high) { <br>
 			int pidx = partition(arr, low, high);<br>
 			quickSort(arr, low, pidx-1);<br>
 			quickSort(arr, pidx+1, high);<br>
