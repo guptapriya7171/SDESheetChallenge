@@ -74,6 +74,7 @@
 		   <b>}</b>
 
 		
+		   
        v. Then we run a for loop from low to high.<br> 
            In this loop, we put all of the smaller elements in the intial positions and pivot element after such elements with the help of a swap method and return pivot.<br>
           
