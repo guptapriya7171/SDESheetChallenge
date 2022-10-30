@@ -53,26 +53,26 @@
           Select the pivot element from a low, high or a median element.<br>
           Then take an i variable inside of a partition method and initiating with a minus value as a index.<br>
 	  
-	 <b>
-	public static int partition(int arr[], int low, int high) {
-		int pivot = arr[high];
-		int i = low - 1;
+	
+	 <b>public static int partition(int arr[], int low, int high) {</b>
+	 <b>	int pivot = arr[high]; </b>
+	 <b>	int i = low - 1;</b>
 		
-		for(int j=low;j<high;j++) {
-			if(arr[j] < pivot) {
-				i++;
-				int temp = arr[i];
-				arr[i] = arr[j];
-				arr[j] = temp;
-			}
-		}
-		i++;
-		int temp = arr[i];
-		arr[i] = pivot;
-		arr[high] = temp;
-		return i;
-		}
-</b>
+	  <b>	for(int j=low;j<high;j++) { </b>
+	   <b>		if(arr[j] < pivot) { </b>
+	   <b>			i++;         </b>
+           <b>		int temp = arr[i];    </b>
+	   <b>			arr[i] = arr[j];</b>
+	   <b>			arr[j] = temp;</b>
+	   <b>	}</b>
+	   <b>	}<b>
+	   <b>	i++; </b>
+	   <b>	int temp = arr[i]; </b>
+	   <b>  arr[i] = pivot; </b>
+           <b> arr[high] = temp; </b>
+		   <b> return i; </b>
+		   <b>}</b>
+
 		
        v. Then we run a for loop from low to high.<br> 
            In this loop, we put all of the smaller elements in the intial positions and pivot element after such elements with the help of a swap method and return pivot.<br>
