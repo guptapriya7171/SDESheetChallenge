@@ -50,6 +50,7 @@
       iv. In the partition method, we are using same arr, low and high values as well.<br>
           Select the pivot element from a low, high or a median element.<br>
           Then take an i variable inside of a partition method and initiating with a minus value as a index.<br>
+	  
 	<i>public static int partition(int arr[], int low, int high) {
 		int pivot = arr[high];
 		int i = low - 1;
@@ -68,6 +69,7 @@
 		arr[high] = temp;
 		return i;
 		}</i>
+		
        v. Then we run a for loop from low to high.<br> 
            In this loop, we put all of the smaller elements in the intial positions and pivot element after such elements with the help of a swap method and return pivot.<br>
           
