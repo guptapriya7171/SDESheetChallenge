@@ -54,24 +54,24 @@
           Then take an i variable inside of a partition method and initiating with a minus value as a index.<br>
 	  
 	
-	 <b>public static int partition(int arr[], int low, int high) {</b>
-	 <b>	int pivot = arr[high]; </b>
-	 <b>	int i = low - 1;</b>
+	 <b>public static int partition(int arr[], int low, int high) {</b><br>
+	 <b>	int pivot = arr[high]; </b><br>
+	 <b>	int i = low - 1;</b><br>
 		
-	  <b>	for(int j=low;j<high;j++) { </b>
-	   <b>		if(arr[j] < pivot) { </b>
-	   <b>			i++;         </b>
-           <b>		int temp = arr[i];    </b>
-	   <b>			arr[i] = arr[j];</b>
-	   <b>			arr[j] = temp;</b>
-	   <b>	}</b>
-	   <b>	}<b>
-	   <b>	i++; </b>
-	   <b>	int temp = arr[i]; </b>
-	   <b>  arr[i] = pivot; </b>
-           <b> arr[high] = temp; </b>
-		   <b> return i; </b>
-		   <b>}</b>
+	  <b>	for(int j=low;j<high;j++) { </b><br>
+	   <b>		if(arr[j] < pivot) { </b><br>
+	   <b>			i++;         </b><br>
+           <b>		int temp = arr[i];    </b><br>
+	   <b>			arr[i] = arr[j];</b><br>
+	   <b>			arr[j] = temp;</b><br>
+	   <b>	}</b><br>
+	   <b>	}<b><br>
+	   <b>	i++; </b><br>
+	   <b>	int temp = arr[i]; </b><br>
+	   <b>  arr[i] = pivot; </b><br>
+           <b> arr[high] = temp; </b><br><br>
+		   <b> return i; </b><br>
+		   <b>}</b><br>
 
 		
 		   
