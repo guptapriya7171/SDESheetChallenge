@@ -41,20 +41,20 @@
      i. In this sort, we are selecting one pivot element recursively and placing it at it's correct position.<br>
      ii. In quickSort method, we are selecting 3 elements : arr, low, high.<br>
      iii. Pass the condition to run the partition till the low is lesser than high.<br>
-         <b>
+         <i><b>
 	 Code<br>
          if(low < high) { <br>
 			int pidx = partition(arr, low, high);<br>
 			quickSort(arr, low, pidx-1);<br>
 			quickSort(arr, pidx+1, high);<br>
 		}<br>
-          </b>
+          </b></i>
       iv. In the partition method, we are using same arr, low and high values as well.<br>
           Select the pivot element from a low, high or a median element.<br>
           Then take an i variable inside of a partition method and initiating with a minus value as a index.<br>
 	  
 	
-	 <b>public static int partition(int arr[], int low, int high) {</b><br>
+	 <i><b>public static int partition(int arr[], int low, int high) {</b><br>
 	 <b>	int pivot = arr[high]; </b><br>
 	 <b>	int i = low - 1;</b><br>
 		
@@ -71,7 +71,7 @@
 	   <b>  arr[i] = pivot; </b><br>
            <b> arr[high] = temp; </b><br>
 		   <b> return i; </b><br>
-		   <b>}</b><br>
+		   <b>}</b><br></i>
 
 		
 		   
