@@ -40,7 +40,7 @@
      <h4>Steps</h4>
      i. In this sort, we are selecting one pivot element recursively and placing it at it's correct position.<br>
      ii. In quickSort method, we are selecting 3 elements : arr, low, high.<br>
-     iii. Pass the condition to run the partition till the low is lesser than high.<br>
+     iii. Pass the condition to run the partition till the lowest is lesser than higher variable.<br>
          <i><b>
 	 Code<br>
          if(low < high) { <br>
