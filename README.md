@@ -32,12 +32,12 @@
    - Bubble Sort<br/>
    - Selection Sort<br/>
    - Insertion Sort<br/>
-     <h4>Steps</h4><br>
+     <h4>Steps</h4>
       i. one for loop(1ton)<br> ii. Let j =i-1 <br> iii. declare counter(key) = arr[i] <br> iv. the while loop with 2 conditions.  <br>v.  Place the value as key in the proper position(arr[j+1]=current).<br>
    - Merge Sort<br/>
     i. You will be given two arrays and we have to compare two array's element and then insert the remaining elements which be given as an output.
    - Quick Sort<br/>
-     <h4>Steps</h4><br>
+     <h4>Steps</h4>
      i. In this sort, we are selecting one pivot element recursively and placing it at it's correct position.<br>
      ii. In quickSort method, we are selecting 3 elements : arr, low, high.<br>
      iii. Pass the condition to run the partition till the low is lesser than high.<br>
@@ -52,8 +52,7 @@
           Then take an i variable inside of a partition method and initiating with a minus value as a index.<br>
        v. Then we run a for loop from low to high.<br> 
            In this loop, we put all of the smaller elements in the intial positions and pivot element after such elements with the help of a swap method and return pivot.<br>
-           
-       
+          
    - Randomised Quick Sort<br/>
 6. Searching<br/>
    - Linear Search<br/>
