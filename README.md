@@ -65,11 +65,11 @@
 	   <b>			arr[i] = arr[j];</b><br>
 	   <b>			arr[j] = temp;</b><br>
 	   <b>	}</b><br>
-	   <b>	}<b><br>
+	   <b>	}</b><br>
 	   <b>	i++; </b><br>
 	   <b>	int temp = arr[i]; </b><br>
 	   <b>  arr[i] = pivot; </b><br>
-           <b> arr[high] = temp; </b><br><br>
+           <b> arr[high] = temp; </b><br>
 		   <b> return i; </b><br>
 		   <b>}</b><br>
 
