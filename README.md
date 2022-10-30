@@ -42,10 +42,10 @@
      ii. In quickSort method, we are selecting 3 elements : arr, low, high.<br>
      iii. Pass the condition to run the partition till the low is lesser than high.<br>
          <i>code</i><br>
-         if(low < high) {<br>
-			int pidx = partition(arr, low, high);<br>
-			quickSort(arr, low, pidx-1);<br>
-			quickSort(arr, pidx+1, high);<br>
+         <i>if(low < high) { </i><br>
+			<i>int pidx = partition(arr, low, high);</i><br>
+			<i>quickSort(arr, low, pidx-1);</i><br>
+			<i>quickSort(arr, pidx+1, high);</i><br>
 		}<br>
       iv. In the partition method, we are using same arr, low and high values as well.<br>
           Select the pivot element from a low, high or a median element.<br>
