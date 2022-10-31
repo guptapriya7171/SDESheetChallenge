@@ -79,6 +79,7 @@
            In this loop, we put all of the smaller elements in the intial positions and pivot element after such elements with the help of a swap method and return pivot.<br>
           
    - Randomised Quick Sort<br/>
+   In randomized quick sort, we can select any element we would like.
 6. Searching<br/>
    - Linear Search<br/>
    - Binary Search<br/>
