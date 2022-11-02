@@ -2,17 +2,15 @@ OOPS
 Object oriented programming is super helpful for creating a larger and complex software.
 It has several entities that pass on data and make the required automation.
 Following are the basic concepts of object oriented programming.
-Class
-Object
-Method
-Inheritance
-Encapsulation
-Polymorphism
-Data Abstraction
-
+Class, Object, Method, Inheritance, Encapsulation, Polymorphism,Data Abstraction etc. 
 
 Object-Oriented Programming(OOP), is all about creating “objects”. An object is a group of interrelated variables and functions. 
 These variables are often referred to as properties of the object and functions are referred to as the behavior of the objects.
 These objects provide a better and clear structure for the program.
 For example, a car can be an object. If we consider the car as an object then its properties would be – its color, its model, its price, its brand, etc. 
 And its behavior/function would be acceleration, slowing down, gear change.
+
+1. Encapsulation: Encapsulation is known as bundling of objects and variables. 
+   We can provide the accessibility using different access modifiers such as public, private, default and protected. 
+   So encapsulation can be easily implemented using private access modifiers.
+   
