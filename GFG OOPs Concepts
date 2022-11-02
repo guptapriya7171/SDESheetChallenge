@@ -110,7 +110,10 @@ Similarities:
 i. Used to acheive abstraction.
 ii. Instances cannot be created.
 iii. Reference can be created.
+Differences: https://www.javatpoint.com/difference-between-abstract-class-and-interface
 
-
+Following is the Condition where to implement Abstract classes and when to implement interfaces:
+1. When we have a is-a relationship like various shapes or various vehicles so at that point we implement abstract classses.
+2. When we need a functionality to be implemented by possibly unrelated classes. (multiple implementations/ multiple inheritance).
 
    
