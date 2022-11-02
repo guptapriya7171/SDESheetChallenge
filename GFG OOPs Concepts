@@ -14,3 +14,23 @@ And its behavior/function would be acceleration, slowing down, gear change.
    We can provide the accessibility using different access modifiers such as public, private, default and protected. 
    So encapsulation can be easily implemented using private access modifiers.
    
+2. Access Modifiers:
+   When we create a class we provide an access modifiers. The default access modifiers specifies means no access modifiers and it's scope remains within the package.
+   The package is the collections of classes and interfaces. It can be used to manage or organize our projects. Package even denote the folder path. 
+   Following are the scopes of access modifiers with their respective scopes:
+   public:within the class
+   default: within the package
+   protected: within the package and child classes of other packages.
+   public: anywhere
+ 
+3. this keyword: It is used to pass the value of the keywords internally or the values of the properties.
+
+4. final keyword: A final keyword can be used with variable, method and class. 
+A final variable is the final or fixed values. And it cannot be changed or manipulated later on. The subclasses of the final class cannot be created.
+When you create a method as final variable, it cannot be overridden. A variable can also be declared as final variable. 
+And a variable that's has been declare as final but not initialize is known as blank variable.
+
+5. 
+
+
+   
