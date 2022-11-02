@@ -24,6 +24,7 @@
    - Substrings<br/>
    String Comparison<br/>
    - Lexiographical comparison <br/>
+   
 4. Recursion & Backtracking<br/>
    (YT Explaination Link : https://www.youtube.com/watch?v=KynksA2FQpg&list=PLLT4EuYB4kIZfNt7M9FMfcJEiE5E8pmFL)</br>
    (YT Explaination Link : https://www.youtube.com/results?search_query=prakash+shukla+backtracking)</br>
@@ -82,7 +83,7 @@
    In randomized quick sort, we can select any element we would like.
 There are two partitioning schemes - Hoare’s vs Lomuto partition scheme.<br/>
 It is advised that the reader knows how to implement the QuickSort using either of the two partition schemes.
-		  
+
 6. Searching<br/>
    - Linear Search<br/>
    - Binary Search<br/>
@@ -134,14 +135,14 @@ Step 3: CS Fundamentals<br/>
       - DBMS<br/>
       - Operating Systems<br/><br/>
       - Computer Networks<br/>
- Step 4: Look up the company for which you're  interviewing.<br/>
+Step 4: Look up the company for which you're  interviewing.<br/>
  
- <h3>The Interview Experiances</h3><br/>
- Step 1:<br/>
+<h3>The Interview Experiances</h3><br/>
+Step 1:<br/>
       - Single or Multiple rounds<br/>
       - Stay Calm & Focused<br/>
       - Proper Introduction<br/>
- Step 2:<br/>
+Step 2:<br/>
       - Problem Solving involving DSA<br/>
       - CS Fundamentals<br/>
       - Behavioral Questions<br/>
