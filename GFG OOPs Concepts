@@ -10,7 +10,8 @@ These objects provide a better and clear structure for the program.
 For example, a car can be an object. If we consider the car as an object then its properties would be – its color, its model, its price, its brand, etc. 
 And its behavior/function would be acceleration, slowing down, gear change.
 
-1. Encapsulation: Encapsulation is known as bundling of objects and variables. 
+1. Encapsulation: Object-Oriented Programming focuses on four basic concepts i.e. abstraction, encapsulation, inheritance, and polymorphism.
+   Encapsulation is known as bundling of objects and variables. 
    We can provide the accessibility using different access modifiers such as public, private, default and protected. 
    So encapsulation can be easily implemented using private access modifiers.
    
@@ -30,7 +31,61 @@ A final variable is the final or fixed values. And it cannot be changed or manip
 When you create a method as final variable, it cannot be overridden. A variable can also be declared as final variable. 
 And a variable that's has been declare as final but not initialize is known as blank variable.
 
-5. 
+5. Static Members in java: 
+A static class is basically the same as a non-static class, 
+but there is one difference: a static class cannot be instantiated. 
+In other words, you cannot use the new operator to create a variable of the class type. 
+a. Static members can be accessed without creating an object.
+b. Static methods cannot access non static members.
+c. Non static methods can access static members.
+d. Static methods do not have access to this keyword reference.
+
+6. Constructors : Contructors are used to initialize the data members of the class. We can create a contructor with a parameters or without a parameters.
+
+7. Inheritance: Inheritance is used to implement a is-a relationship.
+                Advantages: Code reusability, Overriding(Runtime Polymorphism).
+                Types of inheritance:
+                i.  Single Inheritance
+                    Single Parent, Single Child
+                ii. Multilevel Inheritance
+                    Multi-level Classes
+                iii.Heirarichal Inheritance
+                    Single Parent, Multiple Childs
+                iv. Multiple Inheritance
+                    Multiple classes derived a single class.
+                    Not allowed in java. Mu
+
+8. Super Keyword: It is used to call parent class contructor.
+                  It is an optional keyword and it can be used to remove an ambiguity if the variable is declared twice 
+                  so only for calling a parent's members.
+                  
+9. Polymorphism : Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. 
+                  There are two types of polymorphism in Java: Compile time polymorphism and Run time polymorphism in java.
+                  Compile-time Polymorphism allows the incorporation of multiple methods within a class.
+                  The methods use the same name but the parameter varies. 
+                  This polymorphism is resolved during the compiler time and it represents the static polymorphism.
+                  Dynamic polymorphism in Java refers to the process when a call to an overridden process is resolved at the run time.
+                  The reference variable of a superclass calls the overridden method. Understanding the process of Upcasting is crucial 
+                  before understanding the concept of run time polymorphism. Upcasting refers to the process
+                  where an object of the child class is referred to by a reference variable of the superclass.
+                  
+The program 
+
+class Bike{  
+ void run(){System.out.println(“running”);} 
+}  
+class Splendor extends Bike{  
+  void run(){System.out.println(“walking safely with 30km”);}  
+    public static void main(String args[]){  
+    Bike b = new Splendor();//upcasting  
+    b.run();  
+  }  
+}  
+
+Output: walking safely with 60km
+                  
+                  
+
 
 
    
