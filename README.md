@@ -86,6 +86,7 @@ It is advised that the reader knows how to implement the QuickSort using either 
 6. Searching<br/>
    - Linear Search<br/>
    - Binary Search<br/>
+    Binary search is implemented in the sorted array. Here we can divide an array iteratively or recursively and get the required index or the element needed to be searched.
 7. Object Oriented Programming Basics<br/>
 
 <h3>Intermediate</h3><br/>
