@@ -84,7 +84,32 @@ class Splendor extends Bike{
 
 Output: walking safely with 60km
                   
-                  
+10. Abstraction: Abstraction is one of the principle of OOPs 
+where the abstracted implementation is been provided in the driver classes but the actual implementations are given in the derived class.
+It the process of hiding certain details and showing only the essential information. Abstract class can implemented using abstract keyword.
+Ex: A car is viewed as a car rather than its individual components.
+It can be performed using two techniques:
+i. Abstraction 
+ii. Interfaces
+Point to remember about abstraction:
+i. No instances
+ii. References can be there
+iii. Can have contructor
+iv. A class can be abstract without any abstract method
+v. We can have static methods
+vi. If a class has one abstract method then the class must be made abstract.
+v. If a subclass does not implement all abstract methods, then the derived class mjust also be abstract.
+
+Interface : It is an another way to implement abstraction. 
+We can create an abstraction using interface using interface keyword.
+The Java compiler adds public and abstract keywords before the interface method. 
+Moreover, it adds public, static and final keywords before data members.
+
+Abstract Class V/s Interfaces
+Similarities: 
+i. Used to acheive abstraction.
+ii. Instances cannot be created.
+iii. Reference can be created.
 
 
 
