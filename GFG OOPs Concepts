@@ -1,7 +1,7 @@
-<b>OOPS</b>
+OOPS
 Object oriented programming is super helpful for creating a larger and complex software. <br>
 It has several entities that pass on data and make the required automation.
-<h1>Following are the basic concepts of object oriented programming</h1>
+Following are the basic concepts of object oriented programming.
 Class
 Object
 Method
@@ -11,8 +11,8 @@ Polymorphism
 Data Abstraction<br>
 
 
-Object-Oriented Programming(OOP), is all about creating “objects”. An object is a group of interrelated variables and functions. <br>
-These variables are often referred to as properties of the object and functions are referred to as the behavior of the objects. <br>
-These objects provide a better and clear structure for the program.<br>
+Object-Oriented Programming(OOP), is all about creating “objects”. An object is a group of interrelated variables and functions. 
+These variables are often referred to as properties of the object and functions are referred to as the behavior of the objects.
+These objects provide a better and clear structure for the program.
 For example, a car can be an object. If we consider the car as an object then its properties would be – its color, its model, its price, its brand, etc. 
-And its behavior/function would be acceleration, slowing down, gear change.<br>
+And its behavior/function would be acceleration, slowing down, gear change.
