@@ -80,6 +80,9 @@
           
    - Randomised Quick Sort<br/>
    In randomized quick sort, we can select any element we would like.
+There are two partitioning schemes - Hoare’s vs Lomuto partition scheme.<br/>
+It is advised that the reader knows how to implement the QuickSort using either of the two partition schemes.
+		  
 6. Searching<br/>
    - Linear Search<br/>
    - Binary Search<br/>
