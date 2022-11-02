@@ -19,10 +19,11 @@ And its behavior/function would be acceleration, slowing down, gear change.
    When we create a class we provide an access modifiers. The default access modifiers specifies means no access modifiers and it's scope remains within the package.
    The package is the collections of classes and interfaces. It can be used to manage or organize our projects. Package even denote the folder path. 
    Following are the scopes of access modifiers with their respective scopes:
-   public:within the class
-   default: within the package
-   protected: within the package and child classes of other packages.
-   public: anywhere
+   private: Within the class
+   public: Anywhere
+   default: Within the package
+   protected: Within the package and child classes of other packages.
+ 
  
 3. this keyword: It is used to pass the value of the keywords internally or the values of the properties.
 
