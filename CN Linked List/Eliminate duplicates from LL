@@ -1,0 +1,76 @@
+Code:
+package linkedlist;
+
+import java.util.Scanner;
+
+public class eliminateDuplicates {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner Inp = new Scanner(System.in);
+		int t =Inp.nextInt();
+		while(t-->0) {
+			Node<Integer> head = takeInput();
+			head =  removeDuplicates(head);
+			 print(head);
+	}
+	}
+
+	public static Node<Integer> removeDuplicates(Node<Integer> head) {
+		//Your code goes here
+        /*Another reference to head*/
+           if(head==null || head.next==null)
+            return head;
+        
+        Node<Integer> pivot1=head;
+        
+       
+        
+        while(pivot1.next!=null)
+        {	
+            if(pivot1.data.equals(pivot1.next.data))
+            {
+                pivot1.next=pivot1.next.next;
+                
+            }
+            else{
+            pivot1=pivot1.next;
+            
+          }
+}           
+        return head;     
+	}
+    
+	public static Node<Integer> takeInput(){
+		Scanner Inp = new Scanner(System.in);
+		int data = Inp.nextInt();
+		Node<Integer> head = null, tail = null;     // data, head, currentNode, tail 
+		while(data !=  -1) {
+			Node<Integer> currentNode = new Node<Integer>(data);
+			if(head == null) {
+				head = currentNode;
+				tail =  currentNode;
+			}else {
+				tail.next = currentNode;
+				tail = currentNode; // tail = tail.next
+			}
+			data = Inp.nextInt();
+		}
+		return head;
+	}
+	public static void print(Node<Integer> head) {
+		Node<Integer> temp = head; 
+		while(temp != null) {
+			System.out.print(temp.data+" ");
+			temp = temp.next;
+		}
+		System.out.println();
+	}
+
+}
+
+Input & Output:
+1
+1 1 2 3 3 4  4 5 6  7 7 7 -1
+1 2 3 4 5 6 7 
