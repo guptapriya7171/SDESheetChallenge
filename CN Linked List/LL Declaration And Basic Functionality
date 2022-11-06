@@ -92,6 +92,23 @@ public class LinkedListUse {
 		prev.next  = nodeToBeInserted;
 	
 	}
+		public static Node<Integer> delete(Node<Integer> head, int pos) {
+			Node<Integer> prev = head;
+			if(pos == 0) {
+				head = head.next;
+				return head;
+			}
+			else 
+			{
+				int count = 0;
+				while(count < pos-1) {
+					count++;
+					prev = prev.next;
+				}
+				prev.next = prev.next.next;
+			}
+		return head;
+		}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		Node<Integer> head = createLinkedList();
@@ -103,6 +120,8 @@ public class LinkedListUse {
         System.out.println("Total size of the linked list: " + count);
         
         insert (head, 80,2);
+        print(head);
+	head =delete(head, 0);
         print(head);
 //    	Node<Integer> head = takeInput();
 //       Node<Integer> n1 = new Node<>(10);
