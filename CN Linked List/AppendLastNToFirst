@@ -50,8 +50,8 @@ public class AppendLastNToFirst {
 			
 			//ElementsToBeSkipped
 			int skip = totalNodes - noOfElements;
-			Node<Integer> prev = null;
-			Node<Integer> curr =  head;
+			Node<Integer> prev = null;  
+			Node<Integer> curr =  head;  
 			
 			// Skip the nodes
             while (skip > 0) {
@@ -61,9 +61,9 @@ public class AppendLastNToFirst {
             }
           
             // Change the pointers
-            prev.next = null;
-        	Node<Integer> tempHead = head;
-            head = curr;
+            prev.next = null; //breaking the skipped elements last link
+            Node<Integer> tempHead = head; //taking up the first element in tempHead
+            head = curr;   //Marking the current as head
 			
             // Find the last node
             while (curr.next != null)
