@@ -1,0 +1,97 @@
+CODE:
+package linkedlist;
+import java.util.Scanner;
+public class AppendLastNToFirst {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner Inp = new Scanner(System.in);
+		int t =Inp.nextInt();
+		while(t-->0) {
+			Node<Integer> head = takeInput();
+			int noOfElements = Inp.nextInt();
+			head =  append(head, noOfElements);
+			 print(head);
+	}
+	}
+		public static Node<Integer> takeInput(){
+			Scanner Inp = new Scanner(System.in);
+			int data = Inp.nextInt();
+			Node<Integer> head = null, tail = null;     // data, head, currentNode, tail 
+			while(data !=  -1) {
+				Node<Integer> currentNode = new Node<Integer>(data);
+				if(head == null) {
+					head = currentNode;
+					tail =  currentNode;
+				}else {
+					tail.next = currentNode;
+					tail = currentNode; // tail = tail.next
+				}
+				data = Inp.nextInt();
+			}
+			return head;
+		}
+		public  static int cntNodes(Node<Integer> node)
+	    {
+	       int c=0;
+	        while(node!=null)
+	        {
+	            node=node.next;
+	             c++;
+	        }
+	        return c;
+	    }
+		public static Node<Integer> append(Node<Integer> head, int noOfElements) {
+			if(head == null || noOfElements ==0) {
+				return head;
+			}
+			//totalElements
+			int totalNodes = cntNodes(head) ;
+			
+			//ElementsToBeSkipped
+			int skip = totalNodes - noOfElements;
+			Node<Integer> prev = null;
+			Node<Integer> curr =  head;
+			
+			// Skip the nodes
+            while (skip > 0) {
+                prev = curr;
+                curr = curr.next;
+                skip--;
+            }
+          
+            // Change the pointers
+            prev.next = null;
+        	Node<Integer> tempHead = head;
+            head = curr;
+			
+            // Find the last node
+            while (curr.next != null)
+                curr = curr.next;
+ 
+            // Connect it to the head
+            // of the sub list
+            curr.next = tempHead; 
+            
+            return head;	
+		}
+		public static void print(Node<Integer> head) {
+			Node<Integer> temp = head; 
+			while(temp != null) {
+				System.out.print(temp.data+" ");
+				temp = temp.next;
+			}
+			System.out.println();
+		}
+ 
+	
+}
+
+Input & Output:
+2
+1 2 3 4 5 -1
+3
+3 4 5 1 2 
+10 20 30 40 50 60  -1
+5
+20 30 40 50 60 10 
