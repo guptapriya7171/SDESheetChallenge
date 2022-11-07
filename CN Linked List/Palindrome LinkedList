@@ -1,0 +1,71 @@
+CODE:
+package linkedlist;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class palindrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner Inp = new Scanner(System.in);
+	       int t = Inp.nextInt();
+	       while(t-- >0) {
+	    	   Node<Integer> head = takeInput();
+	    	    checkPalindrome(head);
+	       }
+		}
+		public static Node<Integer> takeInput(){
+	    Scanner Inp = new Scanner(System.in);
+	    int data = Inp.nextInt();
+		Node<Integer> head = null, tail = null;     
+		while(data != -1) {
+			Node<Integer> currentNode = new Node<Integer>(data);
+			if(head == null) {
+				head = currentNode;
+				tail =  currentNode;
+			}else {
+				tail.next = currentNode;
+				tail = currentNode; // tail = tail.next
+			}
+			data = Inp.nextInt();
+		}
+		return head;
+		}
+		public static void checkPalindrome(Node<Integer> head) {
+			int size  = length(head);
+			 ArrayList<Integer> list=new ArrayList<Integer>(size);
+			 for(int i=0;i<size;i++)
+		        {
+				 list.add(head.data);
+				 head = head.next;
+		        }
+			 int tail=size-1;
+	         int i=0;
+	         boolean isPalindrome=true;
+	         while(i<=tail)
+	         {
+	             if(list.get(i)!=list.get(tail))
+	             {
+	                 isPalindrome=false;
+	             	 break;
+	             }
+	             i++;
+	             tail--;
+	         }
+	         System.out.println(isPalindrome);
+	  }
+		
+		public static int length(Node<Integer> head) {
+			int count = 0;
+			while(head != null) {
+				count++;
+				head = head.next;
+			}
+			return count;
+		}
+}
+Input & Output:
+1
+9 2 3 3 2 9 -1
+true
