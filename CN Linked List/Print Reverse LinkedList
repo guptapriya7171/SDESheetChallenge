@@ -1,0 +1,47 @@
+CODE:
+package linkedlist;
+import java.util.*;
+public class reverseLinkedList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Scanner Inp = new Scanner(System.in);
+       int t = Inp.nextInt();
+       while(t-- >0) {
+    	   Node<Integer> head = takeInput();
+    	    printReverse(head);
+       }
+	}
+	public static Node<Integer> takeInput(){
+    Scanner Inp = new Scanner(System.in);
+    int data = Inp.nextInt();
+	Node<Integer> head = null, tail = null;     
+	while(data != -1) {
+		Node<Integer> currentNode = new Node<Integer>(data);
+		if(head == null) {
+			head = currentNode;
+			tail =  currentNode;
+		}else {
+			tail.next = currentNode;
+			tail = currentNode; // tail = tail.next
+		}
+		data = Inp.nextInt();
+	}
+	return head;
+	}
+	public static void  printReverse(Node<Integer> head){
+		if(head == null) {
+			return ;
+		}
+		printReverse(head.next);
+		System.out.print(head.data + " ");		
+}
+	
+}
+
+Input & Output:
+2 
+1 2 3 45 6  -1
+6 45 3 2 1 
+1 2 3 4 5 6 -1
+6 5 4 3 2 1 
