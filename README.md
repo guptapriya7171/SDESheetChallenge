@@ -95,9 +95,9 @@ It is advised that the reader knows how to implement the QuickSort using either 
 
 <h3>Intermediate</h3><br/>
   1. LinkedList<br/>
-      - A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
+      - A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.<br/>
   2. Stacks<br/>
-      - Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+      - Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).<br/>
   3. Queues<br/>
   4. Dequeue<br/>
   5. Hashing <br/>
