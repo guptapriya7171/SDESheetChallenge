@@ -1,0 +1,18 @@
+public class StackEmptyException extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7865976818874130074L;
+
+}
+
+public class StackFullException extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 465786084548303703L;
+
+	
+}
