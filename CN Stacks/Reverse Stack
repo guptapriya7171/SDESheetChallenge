@@ -1,0 +1,52 @@
+CODE:
+(tough question)
+package Stacks;
+
+import java.util.*;
+
+public class ReverseStack {
+	
+	public static void reverseStack(Stack<Integer> s1, Stack<Integer> helper) {
+		 recursion(s1,helper,s1.size());
+	}
+	  public static void recursion(Stack<Integer> input,Stack<Integer> extra,int n){
+	        if(n==0 || n==1){
+	            return;
+	        }
+	        int temp=input.peek();
+	       input.pop();
+	       recursion(input,extra,n-1);
+	        
+	        while(!input.isEmpty()) {
+				extra.push(input.peek()); //;extra = //9,1,7,6
+				input.pop();
+			}
+	        input.push(temp);        //5
+			while(!extra.isEmpty()) {
+				input.push(extra.peek());  //5 ,6,7,1,9  
+				extra.pop();
+			}
+	         
+	    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner Inp = new Scanner(System.in);
+	    int arr[] = {5,6,7,1,9};
+		Stack<Integer> stack = new Stack<>();
+		
+	    for(int elem:arr) {
+			stack.push(elem);
+		}
+	    System.out.println(stack.size());
+		Stack<Integer> helper = new Stack<>();
+		
+		reverseStack(stack,helper);
+		while(!stack.empty()) {
+			System.out.println(stack.pop());
+		}
+		
+	}
+
+}
