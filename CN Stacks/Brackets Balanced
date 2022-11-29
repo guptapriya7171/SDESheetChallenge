@@ -1,0 +1,49 @@
+CODE:
+package Stacks;
+
+import java.util.*;
+
+public class parenthesis {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner Inp = new Scanner(System.in);
+		String expression = Inp.next();
+		
+		boolean output = isBalanced(expression);
+		System.out.println(output);
+		
+	}
+	 public static boolean isBalanced(String expression) {
+	    if(expression.isEmpty()) {
+	    	return true;
+	    }
+	    Stack<Character> stack = new Stack<>();
+	    for(int i=0;i<expression.length();i++) {
+	    	char curr = expression.charAt(i);
+	    	if(curr == '(' ||curr=='['||curr=='{'){
+	    		stack.push(curr);
+	    	}
+	    	 else{
+	                if(stack.empty())
+	                    return false;
+	                else if(curr==')' && stack.peek()=='('||curr==']'&& stack.peek()=='['||curr=='}'&& stack.peek()=='{')
+	                    stack.pop();
+	                else 
+	                    return false;
+	            }
+	    }
+	    if(stack.isEmpty()){
+	          return true;
+	      }  
+	    else{
+	          return false;
+	      }
+	    
+	 }
+
+}
+Input & Output:
+(()()())
+true
