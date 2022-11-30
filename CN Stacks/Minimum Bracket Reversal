@@ -1,0 +1,42 @@
+CODE:
+package Stacks;
+
+import java.util.*;
+
+public class bracketReversal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		   Scanner Inp = new Scanner(System.in);
+	       String Expression = Inp.next();
+	       int output = countBracketsReversal(Expression);
+	       System.out.println(output);
+	       
+	}
+	 public static int countBracketsReversal(String input) {
+	        //Your code goes here
+	        if (input.length()%2!=0) return -1;
+	        Stack<Character> stack = new Stack<>();
+	        for (int i = 0; i < input.length(); i++) {
+	            if (!stack.isEmpty() && stack.peek() =='{' && input.charAt(i)=='}') stack.pop();
+	            else stack.push(input.charAt(i));
+	        }
+	        int count=0,length = stack.size();
+	        while (!stack.empty() && stack.peek() == '{')
+	        {
+	            stack.pop();
+	            count++;
+	        }
+	        return length/2+count%2;
+	    }
+
+}
+
+Input & Output:
+{{{{}}
+1
+
+
+Expression: {{{{
+If we reverse the second and the fourth opening brackets, the whole expression will get balanced. 
+Since we have to reverse two brackets to make the expression balanced, the expected output will be 2.
