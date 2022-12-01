@@ -1,0 +1,27 @@
+CODE:
+package Queue;
+
+public class QueueUse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       QueueUsingArray queue = new QueueUsingArray(3);
+       int arr[] = {10,20,30, 40,50};
+       for(int elem : arr) {
+//    	   try {
+			queue.enqueue(elem);
+	}
+//    	   catch (QueueFullException e) {
+//			// TODO Auto-generated catch block
+//		}
+//       }
+       while(!queue.isEmpty()) {
+    	  try {
+			System.out.println(queue.dequeue());
+		} catch (QueueEmptyException e) {
+		//Will never reach here	
+		}
+       }
+	}
+
+}
