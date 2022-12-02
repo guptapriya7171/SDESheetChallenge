@@ -43,3 +43,4 @@ public class selectionSort {
 		}
 	}
 }
+//Biggger Loop -- Smaller Loop ---Swap Inside
