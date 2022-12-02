@@ -1,0 +1,99 @@
+1. Increase the current capacity: ensureCapacity() method is used to increase the current capacity of an ArrayList.
+However, capacity of an ArrayList is automatically increased when we try to add more elements than the current capacity.
+To manually increase the current capacity, ensureCapacity() method is used.
+Programme:
+public class MainClass
+{
+    public static void main(String[] args)
+    {
+        ArrayList<String> list = new ArrayList<String>();
+        //Now 'list' can hold 10 elements (Default Initial Capacity)
+        list.ensureCapacity(20);
+        //Now 'list' can hold 20 elements.
+    }
+}
+
+2. Decrease the current capacity : trimToSize() method is used to trim the capacity of arrayList to the current size of ArrayList. 
+Developers use this method to minimize the storage area of an ArrayList.
+Programme:
+public class MainClass
+{
+    public static void main(String[] args)
+    {
+        ArrayList<String> list = new ArrayList<String>();
+        //Now 'list' can hold 10 elements (Default Initial Capacity)
+        list.ensureCapacity(20);
+        //Now 'list' can hold 20 elements.
+        list.add("ONE");
+        list.add("TWO");
+        list.add("THREE");
+        list.add("FOUR");
+        //reducing the current capacity to current size of an ArrayList.
+        list.trimToSize();
+    }
+}
+
+3. Number of elements : Using size() method. size() method returns number of elements present in an ArrayList.
+Programme:
+public class MainClass
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Double> list = new ArrayList<Double>();
+        list.add(1.1);
+        list.add(2.2);
+        list.add(3.3);
+        list.add(4.4);
+        list.add(5.5);
+        System.out.println(list);     //Output : [1.1, 2.2, 3.3, 4.4, 5.5]
+        System.out.println("Size Of ArrayList = "+list.size());   //Output : Size Of ArrayList = 5
+    }
+}
+
+--contains() method of ArrayList, we can examine whether the ArrayList contains the given element or not.
+--indexOf() method returns index of first occurrence of a specified element where as lastIndexOf() method 
+returns index of last occurrence of a specified element in an ArrayList.
+If element is not found, they will return -1.
+--get() method returns an element from a specified position of an ArrayList.
+--set() method replaces a particular element in an Arraylist with the given element. This method takes two arguments. 
+One is the index of the element to be replaced and another one is the element to be placed at that position.
+--add() method appends an element at the end of an ArrayList.
+--remove(Object obj) method removes the first occurrence of the specified element ‘obj‘. 
+--clear() method removes all elements of an ArrayList. ArrayList will be empty after this method is executed.
+
+4. Convert an ArrayList to Array:  toArray() method returns an array containing all elements of the ArrayList.
+This method acts as a bridge between normal arrays and collection framework in java.
+Programme: 
+public class MainClass
+{
+    public static void main(String[] args)
+    {
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("JAVA");
+        list.add("J2EE");
+        list.add("JSP");
+        list.add("SERVLETS");
+        list.add("STRUTS");
+        System.out.println(list);      //Output : [JAVA, J2EE, JSP, SERVLETS, STRUTS]
+        //getting an array containing all elements of the list.
+        Object[] array = list.toArray();
+ 
+        //Printing the elements of the returned array.
+        for (Object object : array)
+        {
+            System.out.println(object);
+        }
+ 
+//      Output :
+//      JAVA
+//      J2EE
+//      JSP
+//      SERVLETS
+//      STRUTS
+    }
+}
+
+5. Retrieve a portion of an ArrayList : Using subList() method of ArrayList, we can retrieve a portion of an ArrayList.
+6. To join two ArrayLists: We can use addAll() method which takes Collection type as an argument to join two ArrayLists. 
+
+
