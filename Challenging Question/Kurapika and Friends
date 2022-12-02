@@ -1,0 +1,2 @@
+Question: Given two arrays, 's' and 'e', where s[i] denotes the starting date when an ith friends are available and e[i] the date when the ith 
+friends will not be available after this date. Help to know to find the maximum number of frinds he ca meet on a single day.
