@@ -51,4 +51,23 @@ public class CreateArrayListExample {
 
 
 Methods:
-isEmpty, size, get,set, remove, removeAll, removeif, forEach, iterator, iterator & forEachRemaining() method, listIterator, contains, indexOf, lastIndexOf
+isEmpty, size, get,set, remove, removeAll, removeif, forEach, iterator, iterator & forEachRemaining() method, 
+listIterator, contains, indexOf, lastIndexOf
+
+
+ArrayList can be created in 3 ways.
+
+a) ArrayList() —> It creates an empty ArrayList with initial capacity of 10.
+b) ArrayList(int initialCapacity) —> It creates an empty ArrayList with supplied initial capacity.
+c) ArrayList(Collection c) —> It creates an ArrayList containing the elements of the supplied collection.
+
+Programme:
+public class MainClass
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> list1 = new ArrayList<Integer>();          //First Method
+        ArrayList<String> list2 = new ArrayList<String>(20);         //Second Method
+        ArrayList<Integer> list3 = new ArrayList<Integer>(list1);      //Third Method
+    }
+}
