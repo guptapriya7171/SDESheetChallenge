@@ -48,3 +48,7 @@ public class CreateArrayListExample {
 # Output
 [Lion, Tiger, Cat, Dog]
 [Lion, Tiger, Elephant, Cat, Dog]
+
+
+Methods:
+isEmpty, size, get,set, remove, removeAll, removeif, forEach, iterator, iterator & forEachRemaining() method, listIterator, contains, indexOf, lastIndexOf
