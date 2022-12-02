@@ -16,3 +16,35 @@ You need to use boxed types like Integer, Character, Boolean etc.
 Java ArrayList is not synchronized. 
 If multiple threads try to modify an ArrayList at the same time, then the final outcome will be non-deterministic. 
 You must explicitly synchronize access to an ArrayList if multiple threads are gonna modify it.
+
+Creating an ArrayList and adding new elements to it
+This example shows:
+How to create an ArrayList using the ArrayList() constructor.
+Add new elements to an ArrayList using the add() method.
+import java.util.ArrayList;
+import java.util.List;
+
+public class CreateArrayListExample {
+
+    public static void main(String[] args) {
+        // Creating an ArrayList of String
+        List<String> animals = new ArrayList<>();
+
+        // Adding new elements to the ArrayList
+        animals.add("Lion");
+        animals.add("Tiger");
+        animals.add("Cat");
+        animals.add("Dog");
+
+        System.out.println(animals);
+
+        // Adding an element at a particular index in an ArrayList
+        animals.add(2, "Elephant");
+
+        System.out.println(animals);
+
+    }
+}
+# Output
+[Lion, Tiger, Cat, Dog]
+[Lion, Tiger, Elephant, Cat, Dog]
