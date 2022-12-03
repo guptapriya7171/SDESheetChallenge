@@ -1,8 +1,14 @@
+For a given two strings, 'str1' and 'str2', check whether they are a permutation of each other or not.
+Sample Input 1:
+abcde
+baedc
+Sample Output 1:
+true
+
+CODE:
 1. Brute Force Method
 package String;
-
 import java.util.Scanner;
-
 public class checkPermutation {
 
 	public static void main(String[] args) {
@@ -22,19 +28,19 @@ public class checkPermutation {
 		int n1 = a.length();
 		int n2 = b.length();
 		
-    if (a.length() != b.length()) { 
+          if (a.length() != b.length()) { 
             ans= false; 
-    }
-		for(int i =0;i<n1;i++) {
-			for(int j=0;j<n2;j++) {
-				if(a.charAt(i) == b.charAt(j)) {
-					break;
-				}
-				else if((a.charAt(i) != b.charAt(j)) && j==(n2-1)) {
-					ans = false;
-				}
-			}
-		}
+         }
+         for(int i =0;i<n1;i++) {
+           for(int j=0;j<n2;j++) {
+             if(a.charAt(i) == b.charAt(j)) {
+	     break;
+	    }
+        else if((a.charAt(i) != b.charAt(j)) && j==(n2-1)) {
+		ans = false;
+	}
+      }
+}
 		
 		
 		return ans;
