@@ -32,14 +32,19 @@
 5. Sorting<br/>
    - Bubble Sort<br/>
    - Selection Sort<br/>
-    i.One for loop (0 - (n-2)).<br/>
+    i. One for loop (0 - (n-2)).<br/>
     ii. Select corresponding index as min_elem<br/>
     iii. One inner loop to compare each element with min_elem to get an appropriate min_elem<br/>
     iv.  Swap the found minimum element with the first element<br/>
   
    - Insertion Sort<br/>
      <h4>Steps</h4>
-      i. one for loop(1-n)<br> ii. Let j =i-1 <br> iii. declare counter(key) = arr[i] <br> iv. the while loop with 2 conditions.  <br>v.  Place the value as key in the proper position(arr[j+1]=current).<br>
+      i. one for loop(1-n)<br/>
+      ii. Let j =i-1 <br/> 
+      iii. declare counter(key) = arr[i]<br/>
+      iv. the while loop with 2 conditions.<br/>
+      v.  Place the value as key in the proper position(arr[j+1]=current).<br/>
+      
    - Merge Sort<br/>
     i. You will be given two arrays and we have to compare two array's element and then insert the remaining elements which be given as an output.
    - Quick Sort<br/>
