@@ -19,3 +19,78 @@ Output:
 7
 4
 3
+//Unsolved
+CODE:
+/*
+
+Time Complexity : O(N * log(N))
+
+Space Complexity : O(N)
+
+Where, N is the size of the array.
+
+*/
+
+import java.util.TreeMap;
+
+import java.util.Map;
+
+import java.util.Iterator;
+
+public class Solution {
+
+public static int maxFriends(int n, int[] s, int[] e) {
+
+TreeMap < Integer, Integer > numOfPeoples = new TreeMap < > ();
+
+for (int i = 0; i < n; i++) {
+
+// Increment the day when a friend is available.
+
+if (numOfPeoples.get(s[i]) == null) {
+
+numOfPeoples.put(s[i], 0);
+
+}
+
+numOfPeoples.put(s[i], numOfPeoples.get(s[i]) + 1);
+
+// Decrement the day when that friend becomes unavailable.
+
+if (numOfPeoples.get(e[i] + 1) == null) {
+
+numOfPeoples.put(e[i] + 1, 0);
+
+}
+
+numOfPeoples.put((e[i] + 1), numOfPeoples.get(e[i] + 1) - 1);
+
+}
+
+// Counter to store the current available friends.
+
+int counter = 0;
+
+// Integer to store the final answer.
+
+int mx = 0;
+
+// Iterate over the map.
+
+Iterator itr = numOfPeoples.entrySet().iterator();
+
+while (itr.hasNext()) {
+
+Map.Entry mapElement = (Map.Entry) itr.next();
+
+counter += (int) mapElement.getValue();
+
+mx = Math.max(mx, counter);
+
+}
+
+return mx;
+
+}
+
+}
