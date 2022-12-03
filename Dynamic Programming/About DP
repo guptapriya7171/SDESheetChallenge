@@ -15,5 +15,13 @@ Two ways of DP
 Memoization(Top Down)
 Tabulation(Bottom Up)
 
+7 Important Questions
+i. Fibonacci - Climbing Stairs
+ii. 0-1 Knapsack
+iii. Unbounded Knapsack
+iv. Longest Common Subsequence
+v. Kadane's Algorithm
+vi. Catalan Number
+vii. DP on GRID
 
 
