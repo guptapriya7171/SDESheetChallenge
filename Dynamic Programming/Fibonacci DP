@@ -1,0 +1,28 @@
+CODE:
+package DP;
+
+import java.util.Scanner;
+
+public class Fibonacci {
+
+	public static int fibb(int n, int f[]) {
+		
+		if(n==0 || n==1) {
+			return n;
+		}
+		if(f[n] != 0) {
+			return f[n];
+		}
+		f[n] =  fibb(n-1,f)+fibb(n-2,f);
+		return f[n];
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		int f[] = new int[n+1];
+		System.out.println(fibb(n, f));
+	}
+
+}
