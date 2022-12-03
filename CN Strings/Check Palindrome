@@ -1,3 +1,10 @@
+Given a string, determine if it is a palindrome, considering only alphanumeric characters.
+Sample Input 1 :
+abcdcba
+Sample Output 1 :
+true 
+
+
 1. Brute Force
 
 CODE:
