@@ -1,3 +1,41 @@
 Question: You have been given two arraylist of closed intervals. The task is to find the intersection of these two interval lists.
 if the interval1 is [[0,5],[7,9],[10,11]] and interval 2 is [[0,2],[3,5],[12,13]] then the intersection arralist will be:
 [[0,2],[3,5],[7,7]]
+
+CODE:
+import java.util.ArrayList;
+
+public class Solution {
+
+public static ArrayList<ArrayList<Integer>> intersectionIntervals(ArrayList<ArrayList<Integer>> interval1, ArrayList<ArrayList<Integer>> interval2, int n1, int n2) {
+
+ArrayList<ArrayList<Integer>> intersection = new ArrayList<ArrayList<Integer>>();
+
+int i = 0;
+int j = 0;
+while(i < interval1.size() && j < interval2.size()){
+
+  int a = Math.max(interval1.get(i).get(0), interval2.get(j).get(0));
+  int b = Math.min(interval1.get(i).get(1), interval2.get(j).get(1));
+
+if(a <= b){
+
+    ArrayList<Integer> pair = new ArrayList<Integer>(2);
+    pair.add(a);pair.add(b);
+    intersection.add(pair);
+
+}
+
+if(interval1.get(i).get(1) < interval2.get(j).get(1)){
+      i++;
+}
+
+else{
+     j++;
+}
+
+}
+
+return intersection;
+
+}
