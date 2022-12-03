@@ -1,3 +1,13 @@
+Write a program to do basic string compression.
+For a character which is consecutively repeated more than once,
+replace consecutive duplicate occurrences with the count of repetitions.
+
+Sample Input 1:
+aaabbccdsa
+Sample Output 1:
+a3b2c2dsa
+
+CODE:
 package String;
 
 import java.util.Scanner;
