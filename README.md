@@ -32,10 +32,10 @@
 5. Sorting<br/>
    - Bubble Sort<br/>
    - Selection Sort<br/>
-   - i.One for loop (0 - (n-2)).<br>
-   - ii. Select corresponding index as min_elem<br>
-   - iii. One inner loop to compare each element with min_elem to get an appropriate min_elem<br>
-   - iv.  Swap the found minimum element with the first element<br>
+    i.One for loop (0 - (n-2)).<br/>
+    ii. Select corresponding index as min_elem<br/>
+    iii. One inner loop to compare each element with min_elem to get an appropriate min_elem<br/>
+    iv.  Swap the found minimum element with the first element<br/>
   
    - Insertion Sort<br/>
      <h4>Steps</h4>
