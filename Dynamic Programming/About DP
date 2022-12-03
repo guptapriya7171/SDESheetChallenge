@@ -1,4 +1,14 @@
 Dynamic Programming is mainly an optimization over plain recursion. 
 Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming. 
 The idea is to simply store the results of subproblems, so that we do not have to re-compute them when needed later.
-This simple optimization reduces time complexities from exponential to polynomial
+This simple optimization reduces time complexities from exponential to polynomial.
+
+How to identify DP?
+i. Optimal Solution
+ii. Some choice has been given(multiple branches in recursion tree)
+
+DP Official Defination
+Dynamic Programming is a technique in computer programming that helps to efficiently solve a class of problems that helps to
+efficiently solve a class of problems that have overlapping subproblems and optimal substructure property.
+
+
