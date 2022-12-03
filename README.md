@@ -31,6 +31,7 @@
   
 5. Sorting<br/>
    - Bubble Sort<br/>
+   Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order
    - Selection Sort<br/>
    The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning.<br/> 
     i. One for loop (0 - (n-2)).<br/>
