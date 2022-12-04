@@ -1,0 +1,18 @@
+Q. Arrange an array in a lexiographical manner and return the kth element from the array.
+Sample Input 1 :
+2
+13 2
+5 5
+Sample Output 1 :
+10
+5
+
+Explanation For Sample Input 1 :
+For case 1:
+    For N = 13, array 'A' is [1, 2, 3, 4, ….., 12, 13]. After lexicographical sorting, array 'A' becomes [1, 10, 11, 12, 13, 2, 3, …. 8, 9] which has number 10 at its second position.
+
+For Case 2:
+    Before and After sorting, array 'A' remains the same which is [1, 2, 3, 4, 5]. Number 5 appears at 5th position.
+    
+    
+CODE:
