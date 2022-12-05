@@ -16,3 +16,72 @@ For Case 2:
     
     
 CODE:
+/*
+
+Time Complexity: O(D ^ 2)
+
+Space Complexity: O(1)
+
+where,
+
+D = log10(N).
+
+N is provided in input data, denoting the range of array elements.
+
+*/
+
+public class Solution {
+
+// Function to calculate count of numbers starting with 'num1'.
+
+public static int calcSteps(long N, long num1, long num2)
+
+{
+int cnt = 0;
+while(num1 <= N)
+{
+// Take the count until 'N' or 'num2' is reached.
+cnt += Math.min(N + 1, num2) - num1;
+num1 *= 10;
+num2 *= 10;
+}
+
+return cnt;
+
+}
+
+public static int findKth(int N, int K) {
+
+// Initialize answer.
+
+int ans = 1;
+
+K--;
+
+while(K != 0)
+
+{
+// Calculate the count of numbers starting with 'ans'.
+int steps = calcSteps(N, ans, ans + 1);
+
+// If steps is less than or equal to 'K', digit is changed.
+
+if(steps <= K)
+{
+K -= steps;
+ans += 1;
+}
+// Else, digit is fixed and move to next position.
+else
+{
+ans *= 10;
+K -= 1;
+}
+
+}
+
+return ans;
+
+}
+
+}
