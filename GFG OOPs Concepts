@@ -41,7 +41,8 @@ b. Static methods cannot access non static members.
 c. Non static methods can access static members.
 d. Static methods do not have access to this keyword reference.
 
-6. Constructors : Contructors are used to initialize the data members of the class. We can create a contructor with a parameters or without a parameters.
+6. Constructors : Contructors are used to initialize the data members of the class.
+We can create a contructor with a parameters or without a parameters.
 
 7. Inheritance: Inheritance is used to implement a is-a relationship.
                 Advantages: Code reusability, Overriding(Runtime Polymorphism).
@@ -54,7 +55,7 @@ d. Static methods do not have access to this keyword reference.
                     Single Parent, Multiple Childs
                 iv. Multiple Inheritance
                     Multiple classes derived a single class.
-                    Not allowed in java. Mu
+                    Not allowed in java.
 
 8. Super Keyword: It is used to call parent class contructor.
                   It is an optional keyword and it can be used to remove an ambiguity if the variable is declared twice 
