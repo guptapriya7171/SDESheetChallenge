@@ -7,7 +7,8 @@ Class, Object, Method, Inheritance, Encapsulation, Polymorphism,Data Abstraction
 Object-Oriented Programming(OOP), is all about creating “objects”. An object is a group of interrelated variables and functions. 
 These variables are often referred to as properties of the object and functions are referred to as the behavior of the objects.
 These objects provide a better and clear structure for the program.
-For example, a car can be an object. If we consider the car as an object then its properties would be – its color, its model, its price, its brand, etc. 
+For example, a car can be an object. 
+If we consider the car as an object then its properties would be – its color, its model, its price, its brand, etc. 
 And its behavior/function would be acceleration, slowing down, gear change.
 
 1. Encapsulation: Object-Oriented Programming focuses on four basic concepts i.e. abstraction, encapsulation, inheritance, and polymorphism.
@@ -16,8 +17,10 @@ And its behavior/function would be acceleration, slowing down, gear change.
    So encapsulation can be easily implemented using private access modifiers.
    
 2. Access Modifiers:
-   When we create a class we provide an access modifiers. The default access modifiers specifies means no access modifiers and it's scope remains within the package.
-   The package is the collections of classes and interfaces. It can be used to manage or organize our projects. Package even denote the folder path. 
+   When we create a class we provide an access modifiers. 
+   The default access modifiers specifies means no access modifiers and it's scope remains within the package.
+   The package is the collections of classes and interfaces. It can be used to manage or organize our projects.
+   Package even denote the folder path. 
    Following are the scopes of access modifiers with their respective scopes:
    private: Within the class
    public: Anywhere
@@ -28,8 +31,10 @@ And its behavior/function would be acceleration, slowing down, gear change.
 3. this keyword: It is used to pass the value of the keywords internally or the values of the properties.
 
 4. final keyword: A final keyword can be used with variable, method and class. 
-A final variable is the final or fixed values. And it cannot be changed or manipulated later on. The subclasses of the final class cannot be created.
-When you create a method as final variable, it cannot be overridden. A variable can also be declared as final variable. 
+A final variable is the final or fixed values. And it cannot be changed or manipulated later on. 
+The subclasses of the final class cannot be created.
+When you create a method as final variable, it cannot be overridden. 
+A variable can also be declared as final variable. 
 And a variable that's has been declare as final but not initialize is known as blank variable.
 
 5. Static Members in java: 
