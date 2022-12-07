@@ -115,9 +115,9 @@ It is advised that the reader knows how to implement the QuickSort using either 
       - Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).<br/>
   3. Queues<br/>
       - A queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.<br/>
-To maintain a circular queue:
-		  enqueue: front = (front+1)% capacity; size--;<br/>
-		  dequeue: rear = (front + size -1)%capacity;<br/>
+To maintain a circular queue:<br/>
+		&nbsp;  enqueue: front = (front+1)% capacity; size--;<br/>
+		&nbsp;  dequeue: rear = (front + size -1)%capacity;<br/>
 		           rear = (rear +1)%capacity;<br/>
 		           arr[rear] = x;<br/>
 		           size++;<br/>
