@@ -1,0 +1,70 @@
+CODE:
+package Queue;
+
+import linkedlist.Node;
+
+public class QueueUsingLL<T> {
+
+	private Node<T> front;
+	private Node<T> rear;
+	int size;
+	
+	public QueueUsingLL() {
+		front = null;
+		rear = null;
+		size =0;
+		/*----------------- Public Functions of Stack -----------------*/
+
+	}
+		public int getSize() { 
+			//Implement the getSize() function
+	       return size;
+	    }
+
+
+	    public boolean isEmpty() { 
+	    	//Implement the isEmpty() function
+	         return size==0;
+	    }
+
+
+	    public void enqueue(int data) {
+	    	//Implement the enqueue(element) function
+	        Node temp = new Node(data);
+	        if(front == null){
+	            front = temp;
+	            rear = temp;
+	        }else
+	            rear.next = temp;
+	            rear = temp;
+	            size++;
+	        }
+	    
+
+
+	    public T dequeue() throws QueueEmptyException {
+	    	if(front == null) {
+	    		throw new QueueEmptyException();
+	    	}
+	    	//Implement the dequeue() function
+	        if(size == 0){
+	             throw  new QueueEmptyException();
+	        }
+	        T temp = front.data;
+	        front  = front.next;
+	        if(front == null) {
+	        	rear = null;
+	        }
+	        size--;
+	        return temp;
+	    }
+
+
+	    public T front() throws QueueEmptyException {
+	    	//Implement the front() function
+	        if(size ==  0){
+	           throw  new QueueEmptyException();
+	        }
+	        return front.data;
+	    }
+	}
