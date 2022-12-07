@@ -114,6 +114,7 @@ It is advised that the reader knows how to implement the QuickSort using either 
   2. Stacks<br/>
       - Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).<br/>
   3. Queues<br/>
+      - A queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.<br/>
   4. Dequeue<br/>
   5. Hashing <br/>
   6. Two pointer approach<br/>
