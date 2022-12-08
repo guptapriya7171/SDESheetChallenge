@@ -122,6 +122,11 @@ To maintain a circular queue:<br/>
 		           arr[rear] = x;<br/>
 		           size++;<br/>
   4. Dequeue<br/>
+  Deque or Double Ended Queue is a generalized version of Queue data structure that allows insert and delete at both ends.<br/>
+  For an efficient implementation:<br/>
+  front  =  (front-1 + capacity)%capacity;<br/>
+  rear  =  (rear-1 + capacity)%capacity;<br/>
+  
   5. Hashing <br/>
   6. Two pointer approach<br/>
   7. Sliding Window<br/>
