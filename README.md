@@ -109,10 +109,13 @@ It is advised that the reader knows how to implement the QuickSort using either 
     <b>(Check the notes in a file named as GFG OOPs concept in the added list of files)</b><br/>
 
 <h3>Intermediate</h3><br/>
+		  
   1. LinkedList<br/>
       - A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.<br/>
+		  
   2. Stacks<br/>
       - Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).<br/>
+		  
   3. Queues<br/>
       - A queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.<br/>
 To maintain a circular queue:<br/>
@@ -121,6 +124,7 @@ To maintain a circular queue:<br/>
 		           rear = (rear +1)%capacity;<br/>
 		           arr[rear] = x;<br/>
 		           size++;<br/>
+		  
   4. Dequeue<br/>
   Deque or Double Ended Queue is a generalized version of Queue data structure that allows insert and delete at both ends.<br/>
   For an efficient implementation:<br/>
