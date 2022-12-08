@@ -128,6 +128,11 @@ To maintain a circular queue:<br/>
   rear  =  (rear-1 + capacity)%capacity;<br/>
   
   5. Hashing <br/>
+  In hashing there is a hash function that maps keys to some values. <br/>
+  To insert a node into the hash table, we need to find the hash index for the given key. <br/>
+  And it could be calculated using the hash function.  <br/>
+  Example: hashIndex = key % noOfBuckets <br/>
+  
   6. Two pointer approach<br/>
   7. Sliding Window<br/>
   8. Greedy approach<br/>
