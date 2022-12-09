@@ -7,34 +7,32 @@ import java.io.*;
 
 public class CircularQueue {
 	// Initialize your data structure
+    private int data[];
+    private int front;  
+    private int  rear;  
+    private int size;
+    
 	public CircularQueue(int n) {
-     
+        data = new int[n];
+        front = -1;
+        rear = -1;
     }
-    CircularQueue myObj  = new CircularQueue();        
-    int arr[] = new int[myObj.n];
-    int front = -1;
-    int rear = -1;
     
-   
-    
-	 /*  Enqueues 'X' into the queue. Returns true if it gets pushed into the stack,
-	   and false otherwise.
-	*/
     
 	public boolean enqueue(int value) {
 		// Write your code here.
-        
-        if((front == -1) && (rear == -1)){
-            arr[++front] = value;
-            arr[++rear] = value;
-        }else{
-            rear = (rear + 1)% n;
-            if(arr[rear] != 0){
-                return false;
-            }
-            arr[rear] = value;
-            return true;
-        }
+       if(size == 0) {
+            front = 0;
+            data[front] = value;
+       }
+        if(size == data.length){
+           return false;
+       } 
+        rear = (rear+1)%data.length;
+        data[rear] = value;
+        size++;
+       
+        return true;
 	}
 
 	/*
@@ -43,10 +41,18 @@ public class CircularQueue {
 	*/
 	public int dequeue() {
 		// Write you code here.
-        if(rear ==  -1){
-            return -1;
-        }
-        return arr[rear];
+       int temp=0;
+       if(size == 0) {
+            front  = -1;
+            rear = -1;
+            temp = front;
+       }
+        else{
+          temp = data[front];
+          front  = (front +1) % data.length;
+          size--;
+       }
+         return temp;
         
 	}
     
