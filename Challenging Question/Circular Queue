@@ -1,0 +1,53 @@
+Question:
+ You will be given Q queries. You need to implement a cicrcular queue using  those queries.
+ 
+CODE:
+import java.util.* ;
+import java.io.*; 
+
+public class CircularQueue {
+	// Initialize your data structure
+	public CircularQueue(int n) {
+     
+    }
+    CircularQueue myObj  = new CircularQueue();        
+    int arr[] = new int[myObj.n];
+    int front = -1;
+    int rear = -1;
+    
+   
+    
+	 /*  Enqueues 'X' into the queue. Returns true if it gets pushed into the stack,
+	   and false otherwise.
+	*/
+    
+	public boolean enqueue(int value) {
+		// Write your code here.
+        
+        if((front == -1) && (rear == -1)){
+            arr[++front] = value;
+            arr[++rear] = value;
+        }else{
+            rear = (rear + 1)% n;
+            if(arr[rear] != 0){
+                return false;
+            }
+            arr[rear] = value;
+            return true;
+        }
+	}
+
+	/*
+	  Dequeues top element from queue. Returns -1 if the stack is empty, otherwise
+	  returns the popped element.
+	*/
+	public int dequeue() {
+		// Write you code here.
+        if(rear ==  -1){
+            return -1;
+        }
+        return arr[rear];
+        
+	}
+    
+};
