@@ -1,0 +1,60 @@
+Sample Input 1:
+2
+3
+1 2 3 
+4
+1 2 1 2
+
+Sample Output 1:
+6
+4 
+Explanation For Sample Output 1:
+In the first test case, the product of all the numbers is 6. The GCD of (1, 2, 3) is 1. So 6 power 1 modulus 1e9 + 7 is 6. So we return 6.
+
+In the second test case, the product of all the numbers is 4. The GCD of (1, 2, 1, 2) is 1. So 4 power 1 modulus 1e9 + 7 is 4. So we return 4.
+
+CODE:
+import java.util.* ;
+import java.io.*; 
+import java.util.ArrayList;
+
+public class Solution {
+
+	public static int numbers(ArrayList<Integer> arr) {
+
+		// Write your code here
+        int size  = arr.size();
+        int result = 1;
+        int output = 0;
+        int minVal = Integer.MAX_VALUE;
+        for(int i=0;i<size;i++){
+            result = result * arr.get(i);
+        }
+       
+        minVal = findGCD(arr, size);
+        
+        output =(int)Math.pow(result, minVal);
+        
+        return output;
+	}
+     public static int gcd(int a, int b)
+           {
+           if (a == 0)
+            return b;
+            return gcd(b % a, a);
+         }
+        public static int findGCD(ArrayList<Integer> arr, int size)
+           {
+        int output = arr.get(0);
+        for (int element: arr){
+            output = gcd(output, element);
+ 
+            if(output == 1)
+            {
+               return 1;
+            }
+        }
+ 
+        return output;
+        }
+}
