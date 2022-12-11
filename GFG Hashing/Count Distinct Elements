@@ -1,0 +1,43 @@
+CODE:
+package Hashing;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class distinctElements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner Inp = new Scanner(System.in);
+	       int n = Inp.nextInt();
+	       Integer arr[] = new Integer[n];
+	       for(int i=0;i<n;i++) {
+	    	   arr[i] = Inp.nextInt();
+	    	  
+	       }
+	      int res = countDistincts(arr,n);
+	      System.out.println(res);
+	}
+
+//	private static int countDistincts(int[] arr, int n) {
+//		// TODO Auto-generated method stub
+//		//15 12 13 12 13 13 18 - 
+//		HashSet<Integer> Unique = new HashSet<Integer>();
+//		
+//		for(int i=0;i<n;i++) {
+//			Unique.add(arr[i]);
+//		}
+//		
+//		return Unique.size();
+//	}
+	
+	private static int countDistincts(Integer arr[], int n) {
+		HashSet<Integer> Unique = new HashSet<Integer>(Arrays.asList(arr));
+		return Unique.size();
+	}
+	}
+
+TC :Theta(n)
+SC : O(n)
