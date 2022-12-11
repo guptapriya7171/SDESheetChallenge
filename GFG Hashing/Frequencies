@@ -1,0 +1,36 @@
+CODE:
+package Hashing;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class frequencies {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 Scanner Inp = new Scanner(System.in);
+	       int n = Inp.nextInt();
+	       Integer arr[] = new Integer[n];
+	       for(int i=0;i<n;i++) {
+	    	   arr[i] = Inp.nextInt();
+	    	   // 10 12 10 15 10 20 12 12
+	       }
+	       countFreq(arr);
+	}
+
+	private static void countFreq(Integer[] arr) {
+		// TODO Auto-generated method stub
+		HashMap<Integer, Integer> h = new HashMap<>();
+		for(int x:arr)
+			h.put(x,h.getOrDefault(x,0)+1);
+		for(Map.Entry<Integer, Integer> e: h.entrySet()) {
+			System.out.println(e.getKey() + " "+e.getValue());
+		}
+	}
+
+
+}
+SC :O(n)
+TC : Theta (n)
