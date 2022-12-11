@@ -1,3 +1,4 @@
+Write an efficient program to count the number of 1s in the binary representation of an integer.
 Sample Input 1:
 2
 5
@@ -26,3 +27,44 @@ DECIMAL    BINARY      SET BIT COUNT
 3            11                  2
 1 + 1 + 2 = 4 
 Answer = 4 % 1000000007 = 4
+
+CODE:
+
+public class Solution 
+{
+    public static int countSetBits(int n) 
+    {
+        //    Write your code here.
+        int mod = 1000000007;
+        int countOnes = 0;
+        for(int i=1;i<=n;i++){
+          countOnes +=  decToBinary(i); 
+        }
+         int result = countOnes % mod;
+        return result;
+    }
+    static int decToBinary(int n) 
+    { 
+        // array to store binary number 
+        int[] binaryNum = new int[1000]; 
+
+        // counter for binary array 
+        int i = 0; 
+        while (n > 0) 
+        { 
+            // storing remainder in binary array 
+            binaryNum[i] = n % 2; 
+            n = n / 2; 
+            i++; 
+        } 
+        int Ones = 0;
+        // printing binary array in reverse order 
+        for (int j = i - 1; j >= 0; j--) {
+       
+          if(binaryNum[j] == 1){
+              Ones++;
+          }
+        }
+        return Ones;
+    }
+}
