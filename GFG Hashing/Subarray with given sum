@@ -1,0 +1,39 @@
+CODE:
+package Hashing;
+import java.util.*;
+public class subArrToTarget {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  Scanner Inp = new Scanner(System.in);
+	       int n = Inp.nextInt();
+	       int arr[] = new int[n];
+	       for(int i=0;i<n;i++) {
+	    	   arr[i] = Inp.nextInt();
+	    	   //1 4 13 -3 -10 5   //Target = 0
+	       }
+	       int target = Inp.nextInt();
+	       boolean result = checkSum(n,arr, target);
+	       System.out.println(result);
+	}
+
+	private static boolean checkSum(int n, int[] arr, int target) {
+		
+		HashSet<Integer> s = new HashSet<Integer>();
+		int pre_sum =0;
+       for(int i=0;i<n;i++) {
+    	 pre_sum  = pre_sum +arr[i];
+    	 if(pre_sum == target) {
+    		 return true;
+    	 }
+    	 if(s.contains(pre_sum-target)) {
+    		 return  true;
+    	 }
+    	
+    	 s.add(pre_sum);
+       }
+		
+		return false;
+	}
+
+}
