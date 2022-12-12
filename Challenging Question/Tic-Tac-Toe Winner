@@ -16,3 +16,161 @@ Sample input 1 :
 Sample output 1 :
 player2
 player1
+CODE:
+/*
+
+Time Complexity : O(M*M)
+
+Space Complexity : O(M*M)
+
+where M denotes the dimension of the grid of size 'MxM'. (For this problem, 'M' = 3)
+
+*/
+
+import java.util.ArrayList;
+
+public class Solution
+
+{
+
+public static String ticTacToeWinner(ArrayList<ArrayList<Integer>> moves, int n)
+
+{
+
+// Minimum of 5 moves are required to decide a winner
+
+if (n <= 4)
+
+{
+
+return "uncertain";
+
+}
+
+ArrayList<ArrayList<Integer>> grid = new ArrayList<>();
+
+for(int i=0 ; i<3 ; i++)
+
+{
+
+ArrayList<Integer> temp = new ArrayList<>();
+
+for(int j=0 ; j<3 ; j++)
+
+{
+
+temp.add(0);
+
+}
+
+grid.add(temp);
+
+}
+
+int diagOneSum = 0, diagTwoSum = 0;
+
+// Mark moves of 'player1' on grid
+
+for (int i = 0; i < n; i += 2)
+
+{
+
+grid.get(moves.get(i).get(0)).set(moves.get(i).get(1) , 1);
+
+}
+
+// Mark moves of 'player2' on grid
+
+for (int i = 1; i < n; i += 2)
+
+{
+
+grid.get(moves.get(i).get(0)).set(moves.get(i).get(1) , 4);
+
+}
+
+for (int i = 0; i < 3; i++)
+
+{
+
+// To store the sum of 'i-th' row and column, respectively
+
+int rowSum = 0, colSum = 0;
+
+for (int j = 0; j < 3; j++)
+
+{
+
+rowSum += grid.get(i).get(j);
+
+colSum += grid.get(j).get(i);
+
+}
+
+// Sum for diagonal from top-left to bottom-right
+
+diagOneSum += grid.get(i).get(i);
+
+// Sum for diagonal from top-right to bottom-left
+
+diagTwoSum += grid.get(i).get(2 - i);
+
+// Sum equal to 3 means 'player1' won
+
+if (rowSum == 3 || colSum == 3)
+
+{
+
+return "player1";
+
+}
+
+// Sum equal to 12 means 'player2' won
+
+else if (rowSum == 12 || colSum == 12)
+
+{
+
+return "player2";
+
+}
+
+}
+
+// Sum equal to 3 means 'player1' won
+
+if (diagOneSum == 3 || diagTwoSum == 3)
+
+{
+
+return "player1";
+
+}
+
+// Sum equal to 12 means 'player2' won
+
+else if (diagOneSum == 12 || diagTwoSum == 12)
+
+{
+
+return "player2";
+
+}
+
+// 'draw' - No winner and all grid positions are marked
+
+if (n == 9)
+
+{
+
+return "draw";
+
+}
+
+// 'uncertain' - No winner and some grid positions are unmarked
+
+return "uncertain";
+
+}
+
+}
