@@ -1,0 +1,8 @@
+Question:
+You are given a set of strings. find the length of an optimal substring.
+Sample Input 1:
+2
+AA
+AAAA
+Sample Output 1:
+4
