@@ -147,9 +147,10 @@ To maintain a circular queue:<br/>
 
 <h3>The Final Hurdle</h3><br/>
 The Advance Topics<br/>
-  - Trees
+  - Trees<br/>
     A Tree is a non-linear data structure and a hierarchy consisting of a collection of nodes such that each node of the tree stores a value and a list of references to other nodes (the “children”).<br/>
   - Binary Trees<br/>
+    A tree data structure where each node has at most 2 children.
   - Binary Search Trees<br/>
   - Priority Queues &Heaps<br/>
   - Graphs<br/>
