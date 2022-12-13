@@ -147,6 +147,7 @@ To maintain a circular queue:<br/>
 
 <h3>The Final Hurdle</h3><br/>
 The Advance Topics<br/>
+  - Trees
   - Binary Trees<br/>
   - Binary Search Trees<br/>
   - Priority Queues &Heaps<br/>
