@@ -1,0 +1,59 @@
+Design an algorithm that accepts a stream of integers and retrieves the product of the last k integers of the stream.
+
+Implement the ProductOfNumbers class:
+
+ProductOfNumbers() Initializes the object with an empty stream.
+void add(int num) Appends the integer num to the stream.
+int getProduct(int k) Returns the product of the last k numbers in the current list. You can assume that always the current list has at least k numbers.
+The test cases are generated so that, at any time, the product of any contiguous sequence of numbers will fit into a single 32-bit integer without overflowing.
+
+CODE:
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+    public static int[] solve(int q, int[][] queries) {
+        // Write your code here
+        int row = q;
+        int col = queries[0].length;
+        int countOnes= 0; 
+        int countZeros=0;
+        for(int i=0;i<row;i++){
+            int j=0;
+            if(queries[i][j] == 0){
+                countZeros++;
+            }
+            else{
+                countOnes++;
+            }
+            
+        }
+        System.out.println(countZeros);
+        System.out.println(countOnes); 
+        int array1[] = new int[countZeros];
+        int array2[] = new int[countOnes];
+        int index1 = 0;
+        int index2 = 0;
+        for(int a=0;a<row;a++){
+            int  b = 1;
+           if(queries[a][0] == 0){
+                array1[index1++] = queries[a][b];
+          
+             }
+            else if(queries[a][0] == 1){
+                int product = 1;
+                int k = queries[a][b];
+                int lastIndx = index1;
+                while(k != 0){
+                   product *= array1[lastIndx];
+                    lastIndx--;
+                    k--;
+                }
+                array2[index2++]= product;
+                
+            }
+          }
+        return array2;
+        }
+        
+    }
+
