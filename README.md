@@ -146,11 +146,15 @@ To maintain a circular queue:<br/>
   2. Online contests on portals like Codechef and Codeforces.<br/>
 
 <h3>The Final Hurdle</h3><br/>
+		  
 The Advance Topics<br/>
+		  
   1. Trees<br/>
     A Tree is a non-linear data structure and a hierarchy consisting of a collection of nodes such that each node of the tree stores a value and a list of references to other nodes (the “children”).<br/>
+		  
   2. Binary Trees<br/>
-    A tree data structure where each node has at most 2 children.
+    A tree data structure where each node has at most 2 children.<br/>
+		  
   3. Binary Search Trees<br/>
   4. Priority Queues &Heaps<br/>
   5. Graphs<br/>
