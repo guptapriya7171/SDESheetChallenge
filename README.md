@@ -147,16 +147,16 @@ To maintain a circular queue:<br/>
 
 <h3>The Final Hurdle</h3><br/>
 The Advance Topics<br/>
-  - Trees<br/>
+  1. Trees<br/>
     A Tree is a non-linear data structure and a hierarchy consisting of a collection of nodes such that each node of the tree stores a value and a list of references to other nodes (the “children”).<br/>
-  - Binary Trees<br/>
+  2. Binary Trees<br/>
     A tree data structure where each node has at most 2 children.
-  - Binary Search Trees<br/>
-  - Priority Queues &Heaps<br/>
-  - Graphs<br/>
-  - Dynamic Programming<br/>
-  - Tries<br/>
-  - String Algorithms(Pattern Matching)<br/>
+  3. Binary Search Trees<br/>
+  4. Priority Queues &Heaps<br/>
+  5. Graphs<br/>
+  6. Dynamic Programming<br/>
+  7. Tries<br/>
+  8. String Algorithms(Pattern Matching)<br/>
 
 <h3>Becoming a pro</h3><br/>
   - Revision and Practice<br/> 
