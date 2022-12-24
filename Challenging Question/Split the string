@@ -1,0 +1,36 @@
+Question: Find the number of good splits
+Solution:
+public class Solution {
+	public static int splitString(String s) {
+		// Write your code here.
+        int goodSplit = 0;
+        
+        if(s.length()==1)return goodSplit;
+        
+        for(int i=0;i<(s.length()-1);i++){
+            for(int j=i+1;j<s.length();j++){
+            String X = s.substring(i, j);
+            String Y = s.substring(j);
+            int a = findUnique(X);
+            int b = findUnique(Y);
+            if(a == b){
+            goodSplit++;
+            }
+        }
+        }
+        return goodSplit;
+	}
+    public static int findUnique(String Z){
+        int count = 1;
+        if(Z.length() == 1)return 1;
+        else{
+        for(int j=0;j<(Z.length()-1);j++){
+           if(Z.charAt(j) != Z.charAt(j+1)){
+               count++;
+           } 
+        }
+        }
+        return count;
+    }
+    
+}
