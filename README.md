@@ -25,12 +25,12 @@
    String Comparison<br/>
    - Lexiographical comparison <br/>
    
-4. Recursion & Backtracking<br/>
+4. <b>Recursion & Backtracking<br/>
    (YT Explaination Link : https://www.youtube.com/watch?v=KynksA2FQpg&list=PLLT4EuYB4kIZfNt7M9FMfcJEiE5E8pmFL)</br>
    (YT Explaination Link : https://www.youtube.com/results?search_query=prakash+shukla+backtracking)</br>
   
 5. <b>Sorting</b><br/>
-   - Bubble Sort<br/>
+   <b> Bubble Sort</b><br/>
    Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.<br/>
    i. Take one loop from 0 to (n-2).</br>
    ii. Another inner loop from 0 to (n-i-1).</br>
@@ -42,7 +42,7 @@
     iii. One inner loop to compare each element with min_elem to get an appropriate min_elem<br/>
     iv.  Swap the found minimum element with the first element<br/>
   
-   - Insertion Sort<br/>
+    I<b>Insertion Sort</b><br/>
 
       i. one for loop(1-n)<br/>
       ii. declare counter(key) = arr[i]<br/>
@@ -50,9 +50,9 @@
       iv. the while loop with 2 conditions (j >= 0 && arr[j] > key), push the elements one step ahead till the condition is satisfied<br/>
       v.  Place the value as key in the proper position(arr[j+1]=current).<br/>
       
-   - Merge Sort<br/>
+    <b> Merge Sort</b><br/>
     i. You will be given two arrays and we have to compare two array's element and then insert the remaining elements which be given as an output.
-   - Quick Sort<br/>
+    <b>Quick Sort</b><br/>
      <h4>Steps</h4>
      i. In this sort, we are selecting one pivot element recursively and placing it at it's correct position.<br>
      ii. In quickSort method, we are selecting 3 elements : arr, low, high.<br>
