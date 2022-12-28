@@ -166,11 +166,22 @@ The Advance Topics<br/>
   Example: AVL tree, Splay Tree, T-trees and more<br/>
 
   4.<b> Priority Queues &Heaps</b> <br/>
+    Priority Queue is an abstract data type that is similar to a queue, and every element has some priority value associated with it.<br/>
+    <b>Properties of Priority Queue</b><br/>
+    So, a priority Queue is an extension of the queue with the following properties. <br/>
+    Every item has a priority associated with it.<br/>
+    An element with high priority is dequeued before an element with low priority.<br/>
+    If two elements have the same priority, they are served according to their order in the queue.<br/>
+    <b>Operations</b> -Insertion, Deletion, Peek<br/>
+    <b>Types</b> - Ascending, Descending<br/>
+    <b>Implementations</b>- Arrays, Linked list, Heap data structure, Binary search tree
+    
+    
   5.<b>  Graphs </b> <br/>
   6.<b> Dynamic Programming </b> <br/>
   7.<b> Tries</b> <br/>
   8.<b> String Algorithms(Pattern Matching)</b> <br/>
-
+   
 <h3>Becoming a pro</h3><br/>
   - Revision and Practice<br/> 
       Use color code(green , yellow and red)<br/>
