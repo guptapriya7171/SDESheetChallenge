@@ -166,7 +166,7 @@ The Advance Topics<br/>
   Example: AVL tree, Splay Tree, T-trees and more<br/>
 
   4.<b> Priority Queues &Heaps</b> <br/>
-    <b>Priority Queue </b> is an abstract data type that is similar to a queue, and every element has some priority value associated with it.<br/>
+   <b>Priority Queue </b> is an abstract data type that is similar to a queue, and every element has some priority value associated with it.<br/>
     <b>Properties of Priority Queue</b><br/>
     So, a priority Queue is an extension of the queue with the following properties. <br/>
     Every item has a priority associated with it.<br/>
@@ -176,9 +176,9 @@ The Advance Topics<br/>
     <b>Types</b> - Ascending, Descending<br/>
     <b>Implementations</b>- Arrays, Linked list, Heap data structure, Binary search tree<br/>
     
-    <b>A Heap</b> is a special Tree-based data structure in which the tree is a complete binary tree.<br/>
+   <b>A Heap</b> is a special Tree-based data structure in which the tree is a complete binary tree.<br/>
     <b>Operations</b> - Heapify, Insertion, Deletion, Peek<br/> 
-    <b>Types</b> - MIN-Heap ,MAX-Heap
+    <b>Types</b> - MIN-Heap ,MAX-Heap<br/>
     
   5.<b>  Graphs </b> <br/>
   6.<b> Dynamic Programming </b> <br/>
