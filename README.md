@@ -29,7 +29,7 @@
    (YT Explaination Link : https://www.youtube.com/watch?v=KynksA2FQpg&list=PLLT4EuYB4kIZfNt7M9FMfcJEiE5E8pmFL)</br>
    (YT Explaination Link : https://www.youtube.com/results?search_query=prakash+shukla+backtracking)</br>
   
-5. Sorting<br/>
+5. <b>Sorting</b><br/>
    - Bubble Sort<br/>
    Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.<br/>
    i. Take one loop from 0 to (n-2).</br>
