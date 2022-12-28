@@ -94,20 +94,20 @@
 		   
        v. Then we run a for loop from low to high.<br> 
            In this loop, we put all of the smaller elements in the intial positions and pivot element after such elements with the help of a swap method and return pivot.<br>
-          
-   - Randomised Quick Sort<br/>
+         
+  <b>Randomised Quick Sort</b><br/>
    In randomized quick sort, we can select any element we would like.
 There are two partitioning schemes - Hoare’s vs Lomuto partition scheme.<br/>
 It is advised that the reader knows how to implement the QuickSort using either of the two partition schemes.
 
-6. Searching<br/>
+ 6. <b>Searching</b><br/>
    - Linear Search<br/>
    - Binary Search<br/>
     Binary search is implemented in the sorted array.
   Here we can divide an array iteratively or recursively and get the required index or the element needed to be searched.
 		  
-7. Object Oriented Programming Basics<br/>
-    <b>(Check the notes in a file named as GFG OOPs concept in the added list of files)</b><br/>
+7.<b>Object Oriented Programming Basics</b><br/>
+    (Check the notes in a file named as GFG OOPs concept in the added list of files above)<br/>
 
 <h3>Intermediate</h3><br/>
 		  
