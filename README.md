@@ -156,6 +156,10 @@ The Advance Topics<br/>
     A tree data structure where each node has at most 2 children.<br/>
 		  
   3. Binary Search Trees<br/>
+    Binary Search Tree is a node-based binary tree data structure which has the following properties:<br/>
+    The left subtree of a node contains only nodes with keys lesser than or equal to the node's key.<br/>
+    The right subtree of a node contains only nodes with keys greater than the node's key.<br/>
+    The left and right subtree each must also be a binary search tree. There must be no duplicate nodes.<br/>
   4. Priority Queues &Heaps<br/>
   5. Graphs<br/>
   6. Dynamic Programming<br/>
