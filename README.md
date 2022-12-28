@@ -110,13 +110,13 @@ It is advised that the reader knows how to implement the QuickSort using either 
 
 <h3>Intermediate</h3><br/>
 		  
-  1. LinkedList<br/>
+  1.<b> LinkedList</b> <br/>
       - A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.<br/>
 		  
-  2. Stacks<br/>
+  2.<b> Stacks</b> <br/>
       - Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).<br/>
 		  
-  3. Queues<br/>
+  3.<b> Queues</b> <br/>
       - A queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.<br/>
 To maintain a circular queue:<br/>
 		&nbsp;  enqueue: front = (front+1)% capacity; size--;<br/>
@@ -125,21 +125,21 @@ To maintain a circular queue:<br/>
 		           arr[rear] = x;<br/>
 		           size++;<br/>
 		  
-  4. Dequeue<br/>
+  4.<b> Dequeue </b> <br/>
   Deque or Double Ended Queue is a generalized version of Queue data structure that allows insert and delete at both ends.<br/>
   For an efficient implementation:<br/>
   front  =  (front-1 + capacity)%capacity;<br/>
   rear  =  (rear-1 + capacity)%capacity;<br/>
   
-  5. Hashing <br/>
+  5.<b> Hashing</b> <br/>
   In hashing there is a hash function that maps keys to some values. <br/>
   To insert a node into the hash table, we need to find the hash index for the given key. <br/>
   And it could be calculated using the hash function.  <br/>
   Example: hashIndex = key % noOfBuckets <br/>
   
-  6. Two pointer approach<br/>
-  7. Sliding Window<br/>
-  8. Greedy approach<br/>
+  6.<b> Two pointer approach</b><br/>
+  7.<b> Sliding Window</b> <br/>
+  8.<b> Greedy approach</b> <br/>
 
 <h3>Take a pause</h3><br/>
   1. Revision and Practice<br/>
@@ -149,22 +149,24 @@ To maintain a circular queue:<br/>
 		  
 The Advance Topics<br/>
 		  
-  1. Trees<br/>
+  1.<b>Trees</b> <br/>
     A Tree is a non-linear data structure and a hierarchy consisting of a collection of nodes such that each node of the tree stores a value and a list of references to other nodes (the “children”).<br/>
 		  
-  2. Binary Trees<br/>
+  2.<b>Binary Trees</b> <br/>
     A tree data structure where each node has at most 2 children.<br/>
 		  
-  3. Binary Search Trees<br/>
-    Binary Search Tree is a node-based binary tree data structure which has the following properties:<br/>
-    The left subtree of a node contains only nodes with keys lesser than or equal to the node's key.<br/>
-    The right subtree of a node contains only nodes with keys greater than the node's key.<br/>
-    The left and right subtree each must also be a binary search tree. There must be no duplicate nodes.<br/>
-  4. Priority Queues &Heaps<br/>
-  5. Graphs<br/>
-  6. Dynamic Programming<br/>
-  7. Tries<br/>
-  8. String Algorithms(Pattern Matching)<br/>
+  3.<b> Binary Search Trees</b> <br/>
+    A binary Search Tree is a node-based binary tree data structure that has the following properties: <br/><br/> 
+    The left subtree of a node contains only nodes with keys lesser than the node’s key.<br/>
+    The right subtree of a node contains only nodes with keys greater than the node’s key.<br/>
+    The left and right subtree each must also be a binary search tree.<br/><br/>
+    There must be no duplicate nodes.<br/>
+
+  4.<b> Priority Queues &Heaps</b> <br/>
+  5.<b>  Graphs </b> <br/>
+  6.<b> Dynamic Programming </b> <br/>
+  7.<b> Tries</b> <br/>
+  8.<b> String Algorithms(Pattern Matching)</b> <br/>
 
 <h3>Becoming a pro</h3><br/>
   - Revision and Practice<br/> 
