@@ -155,6 +155,7 @@ The Advance Topics<br/>
 		  
   2.<b>Binary Trees</b> <br/>
     A tree data structure where each node has at most 2 children.<br/>
+  Example : Full binary tree, Complete binary tree, Extended Binary tree and more<br/>
 		  
   3.<b> Binary Search Trees</b> <br/>
     A binary Search Tree is a node-based binary tree data structure that has the following properties: <br/><br/> 
@@ -162,6 +163,7 @@ The Advance Topics<br/>
     The right subtree of a node contains only nodes with keys greater than the node’s key.<br/>
     The left and right subtree each must also be a binary search tree.<br/><br/>
     There must be no duplicate nodes.<br/>
+  Example: AVL tree, Splay Tree, T-trees and more<br/>
 
   4.<b> Priority Queues &Heaps</b> <br/>
   5.<b>  Graphs </b> <br/>
