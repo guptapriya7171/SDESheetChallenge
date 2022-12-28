@@ -35,14 +35,14 @@
    i. Take one loop from 0 to (n-2).</br>
    ii. Another inner loop from 0 to (n-i-1).</br>
    iii. If (j+1) element is greater than (jth)element then swap the elements.</br>
-   - Selection Sort<br/>
+   <b>Selection Sort</b><br/>
    The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning.<br/> 
     i. One for loop (0 - (n-2)).<br/>
     ii. Select corresponding index as min_elem<br/>
     iii. One inner loop to compare each element with min_elem to get an appropriate min_elem<br/>
     iv.  Swap the found minimum element with the first element<br/>
   
-    I<b>Insertion Sort</b><br/>
+    <b>Insertion Sort</b><br/>
 
       i. one for loop(1-n)<br/>
       ii. declare counter(key) = arr[i]<br/>
@@ -166,7 +166,7 @@ The Advance Topics<br/>
   Example: AVL tree, Splay Tree, T-trees and more<br/>
 
   4.<b> Priority Queues &Heaps</b> <br/>
-    Priority Queue is an abstract data type that is similar to a queue, and every element has some priority value associated with it.<br/>
+    <b>Priority Queue </b> is an abstract data type that is similar to a queue, and every element has some priority value associated with it.<br/>
     <b>Properties of Priority Queue</b><br/>
     So, a priority Queue is an extension of the queue with the following properties. <br/>
     Every item has a priority associated with it.<br/>
@@ -174,8 +174,11 @@ The Advance Topics<br/>
     If two elements have the same priority, they are served according to their order in the queue.<br/>
     <b>Operations</b> -Insertion, Deletion, Peek<br/>
     <b>Types</b> - Ascending, Descending<br/>
-    <b>Implementations</b>- Arrays, Linked list, Heap data structure, Binary search tree
+    <b>Implementations</b>- Arrays, Linked list, Heap data structure, Binary search tree<br/>
     
+    <b>A Heap</b> is a special Tree-based data structure in which the tree is a complete binary tree.<br/>
+    <b>Operations</b> - Heapify, Insertion, Deletion, Peek<br/> 
+    <b>Types</b> - MIN-Heap ,MAX-Heap
     
   5.<b>  Graphs </b> <br/>
   6.<b> Dynamic Programming </b> <br/>
