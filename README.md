@@ -52,7 +52,7 @@
       v.  Place the value as key in the proper position(arr[j+1]=current).<br/>
       
     <b> Merge Sort</b><br/>
-    i. You will be given two arrays and we have to compare two array's element and then insert the remaining elements which be given as an output.<br/>
+    The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. In this algorithm, the array is initially divided into     two equal halves and then they are combined in a sorted manner<br/>
     
     <b>Quick Sort</b><br/>
      <h4>Steps</h4>
