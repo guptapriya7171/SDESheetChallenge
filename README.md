@@ -18,7 +18,7 @@
    - Concatenation in Strings<br/>
      <ul>
      <b><li>concat()</b></li>
-     <b><li>SqueezeString.squeeze(<i>string</i>);</li></b>
+     <b><li>SqueezeString.squeeze(<i>string</i>);</li></b> - remove all the spaces exist in the string <br/>
      <b><li>string.split(<i>symbol</i>);</li></b>
      </ul>
    - Substrings<br/>
